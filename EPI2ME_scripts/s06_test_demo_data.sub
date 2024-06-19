@@ -1,0 +1,84 @@
+#!/bin/bash
+##
+## Downloading EPI2ME wf_transcriptomes pipeline script (with NextFlow)
+## ------------------------------------------
+##
+##"EPI2ME-sub2024v1"
+##
+#PBS -N s06_test_demo_data
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q one_hour
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Use the modules container (with NextFlow and EPI2ME)
+module purge
+module use /apps/modules/all
+##
+## Stop at run time errors
+set -e
+##
+## Load required modules
+module load Singularity/3.11.0-1-system
+module load Nextflow/23.10.0
+module load EPI2ME/5.1.10-1
+##
+## Locate working directiory
+working_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/EPI2ME/demo_data/"
+cd "${working_folder}"
+##
+## Test the pipeline with the demo data
+nextflow run epi2me-labs/wf-transcriptomes \
+--fastq  differential_expression/differential_expression_fastq \
+--de_analysis \
+--ref_genome differential_expression/hg38_chr20.fa \
+--transcriptome-source reference-guided \
+--ref_annotation differential_expression/gencode.v22.annotation.chr20.gtf \
+--direct_rna \
+--minimap2_index_opts '-k 15'  \
+--sample_sheet differential_expression/sample_sheet.csv \
+--jaffal_refBase differential_expression/chr20/ \
+--jaffal_genome hg38_chr20 \
+--jaffal_annotation genCode22 \
+--threads 16 \
+-profile singularity
+##
+echo
+echo "Completed test_demo_data script"
+echo
+date
+echo
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#

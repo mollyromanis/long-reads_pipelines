@@ -1,0 +1,107 @@
+#!/bin/bash
+##
+## Downloading EPI2ME wf_transcriptomes pipeline script (with NextFlow)
+## ------------------------------------------
+##
+##"EPI2ME-sub2024v1"
+##
+#PBS -N s03_download_sg-nex_RNA_data
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q three_hour
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Use the modules container (with NextFlow and EPI2ME)
+module purge
+module use /apps/modules/all
+##
+## Load the AWS module
+module load AWS/awscliV2
+##
+## Stop at run time errors
+set -e
+##
+## Set up folder pathways
+direct_RNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/"
+cd "${direct_RNA}"
+
+mkdir differential_expression/
+differential_expression="${direct_RNA}"differential_expression/
+cd "${differential_expression}"
+
+mkdir barcode01
+barcode01="${differential_expression}"barcode01/
+
+mkdir barcode02
+barcode02="${differential_expression}"barcode02/
+
+mkdir barcode03
+barcode03="${differential_expression}"barcode03/
+
+mkdir barcode04
+barcode04="${differential_expression}"barcode04/
+
+mkdir barcode05
+barcode05="${differential_expression}"barcode05/
+
+mkdir barcode06
+barcode06="${differential_expression}"barcode06/
+##
+## Download the SG-Nex fastq files
+cd "${barcode01}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate2_run1/SGNex_H9_directRNA_replicate2_run1.fastq.gz
+
+cd "${barcode02}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate3_run1/SGNex_H9_directRNA_replicate3_run1.fastq.gz
+
+cd "${barcode03}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate4_run1/SGNex_H9_directRNA_replicate4_run1.fastq.gz
+
+cd "${barcode04}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate1_run1/SGNex_HEYA8_directRNA_replicate1_run1.fastq.gz
+
+cd "${barcode05}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate2_run1/SGNex_HEYA8_directRNA_replicate2_run1.fastq.gz
+
+cd "${barcode06}"
+wget https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate3_run1/SGNex_HEYA8_directRNA_replicate3_run1.fastq.gz
+##
+echo
+echo "Completed download_sg-nex_data_RNA script"
+echo
+date
+echo
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#
