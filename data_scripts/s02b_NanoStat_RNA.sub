@@ -1,0 +1,130 @@
+#!/bin/bash
+##
+## Downloading EPI2ME wf_transcriptomes pipeline script (with NextFlow)
+## ------------------------------------------
+##
+##"EPI2ME-sub2024v1"
+##
+#PBS -N s02b_NanoStat_RNA
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q three_hour
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+module purge
+module use /apps/modules/all
+##
+## Stop at run time errors
+set -e
+##
+## Load required modules
+module load Miniconda3/22.11.1-1
+##
+## Create environment and install nanopack
+cd /mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/full_data/cDNA/quality_control/
+source /apps/software/Miniconda3/22.11.1-1/bin/activate nanopack_env
+##
+## Versions
+NanoStat --version
+echo ""
+##
+## Set up folder pathways
+quality_control="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/full_data/directRNA/quality_control/"
+RNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/full_data/directRNA/differential_expression/"
+##
+barcode01="${RNA}"barcode01/SGNex_H9_directRNA_replicate2_run1.fastq.gz
+barcode02="${RNA}"barcode02/SGNex_H9_directRNA_replicate3_run1.fastq.gz
+barcode03="${RNA}"barcode03/SGNex_H9_directRNA_replicate4_run1.fastq.gz
+barcode04="${RNA}"barcode04/SGNex_HEYA8_directRNA_replicate1_run1.fastq.gz
+barcode05="${RNA}"barcode05/SGNex_HEYA8_directRNA_replicate2_run1.fastq.gz
+barcode06="${RNA}"barcode06/SGNex_HEYA8_directRNA_replicate3_run1.fastq.gz
+##
+output01="${quality_control}"/barcode01
+output02="${quality_control}"/barcode02
+output03="${quality_control}"/barcode03
+output04="${quality_control}"/barcode04
+output05="${quality_control}"/barcode05
+output06="${quality_control}"/barcode06
+##
+## Run nanopack on the fastq files
+echo "Making plots for Barcode 01"
+  NanoStat \
+  --fastq "${barcode01}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output01}"
+
+  echo "Making plots for Barcode 02"
+  NanoStat \
+  --fastq "${barcode02}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output02}"
+
+  echo "Making plots for Barcode 03"
+  NanoStat \
+  --fastq "${barcode03}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output03}"
+
+  echo "Making plots for Barcode 04"
+  NanoStat \
+  --fastq "${barcode04}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output04}"
+
+  echo "Making plots for Barcode 05"
+  NanoStat \
+  --fastq "${barcode05}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output05}"
+
+  echo "Making plots for Barcode 06"
+  NanoStat \
+  --fastq "${barcode06}" \
+  --threads 12 \
+  --drop_outliers \
+  --outdir "${output06}"
+##
+echo
+echo "Completed NanoStat RNA script"
+echo
+date
+echo
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#
