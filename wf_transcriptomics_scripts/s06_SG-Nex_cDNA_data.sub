@@ -1,0 +1,98 @@
+#!/bin/bash
+##
+## Run wf-transcriptomics pipeline on cDNA data
+## ------------------------------------------
+##
+#PBS -N log_s06
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q one_day
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Clear any loaded modules and set the module directory
+module purge
+module use /apps2/modules/all
+##
+## Stop the script execution on runtime errors
+set -e
+##
+## Load required modules
+module load Singularity/3.11.0-1-system
+module load Nextflow/23.10.0
+module load EPI2ME/5.1.10-1
+##
+## Locate working directiory
+working_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/"
+cd "${working_folder}"
+##
+## Set up folder pathways
+gencode="${working_folder}/gencode46/"
+jaffal="${working_folder}/jaffal_hg38_genCode22/"
+cDNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/cDNA/test_data/fastq_files"
+sample_sheet="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/cDNA/test_data/sample_sheet.csv"
+output="/mnt/beegfs/home/s445216/thesis_project/ONP/results/wf_trancriptomics_results/cDNA/"
+mkdir -p "${output}"
+##
+ref_transcriptome="${gencode}gencode.v46.transcripts.fa"
+ref_annotation="${gencode}gencode.v46.basic.annotation.gtf"
+##
+jaffal_resources_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/jaffal_hg38_genCode22/"
+jaffal_genome="hg38"
+jaffal_annotation="genCode22"
+##
+## Run wf-transcriptomes on direct RNA data
+echo "Running pipeline"
+##
+nextflow run epi2me-labs/wf-transcriptomes \
+--fastq "${cDNA}" \
+--sample_sheet "${sample_sheet}" \
+--de_analysis \
+--transcriptome_source precomputed \
+--ref_transcriptome "${ref_transcriptome}" \
+--ref_annotation "${ref_annotation}" \
+--jaffal_refBase "${jaffal_resources_folder}/" \
+--jaffal_genome "${jaffal_genome}" \
+--jaffal_annotation "${jaffal_annotation}" \
+--threads 16 \
+--out_dir "${output}" \
+-profile singularity
+##
+echo ""
+echo "Done"
+echo ""
+date
+echo ""
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#
