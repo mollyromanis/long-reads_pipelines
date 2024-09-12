@@ -1,7 +1,36 @@
-# long-reads_pipelines
-##
-# Evaluation of current bioinformatics pipelines for analysis of long-read transcriptomic data
-##
-# Cranfield University
-##
-# This study explores the benefits of long-read technologies for transcriptomic sequencing, focusing on bioinformatics tools and algorithms for data analysis. Long-read sequencing platforms, such as Nanopore and PacBio, excel in capturing full-length transcripts and accurately identify complex isoforms and alternative splicing events. The study highlights the significance of quality control (QC) and preprocessing tools designed for long-read data, such as NanoPack and Chopper, which prepare data for downstream analysis by addressing specific quality issues associated with these technologies. Using the Oxford Nanopore’s wf-transcriptomes pipeline, the project demonstrates an effective approach to combining multiple tasks into a single workflow, starting from alignment, through transcript assembly and annotation, to fusion genes detection. A comparative analysis of isoform identification tools, including StringTie and ISOQuant, reveals the significant discordance between their results: while StringTie prioritises alignment with existing reference transcriptome, ISOQuant excels in discovering the novel isoforms. Fusion gene detection is also markedly improved with long-read sequencing, as exemplified by JAFFAL's identification of high-confidence fusion events. The study underscores that long-read sequencing technologies offer more detailed and accurate insights into transcriptome complexity compared to short-read approaches. Anticipated advancements in bioinformatics tools and technologies are expected to enhance the accuracy of transcriptomic analyses further, leading to deeper understanding and exploration of gene expression, fusions and isoform diversity.
+# Evaluation of Current Bioinformatics Pipelines for Long-Read Transcriptomic Data
+
+## Overview
+
+This study explores the benefits of long-read technologies for transcriptomic sequencing, with a focus on bioinformatics tools and algorithms designed for data analysis. Long-read sequencing platforms, such as Nanopore and PacBio, excel in capturing full-length transcripts and accurately identifying complex isoforms and alternative splicing events.
+
+## Key Points
+
+### Long-Read Sequencing Technologies
+
+- **Nanopore and PacBio**: These platforms provide advantages in capturing full-length transcripts and identifying complex isoforms and alternative splicing events.
+
+### Quality Control and Preprocessing Tools
+
+- **NanoPack** and **Chopper**: Tools designed for long-read data that address specific quality issues, preparing data for downstream analysis.
+
+### Workflow
+
+- **Oxford Nanopore’s wf-transcriptomes Pipeline**: An effective approach that integrates multiple tasks into a single workflow, from alignment to transcript assembly, annotation, and fusion gene detection.
+
+### Comparative Analysis of Isoform Identification Tools
+
+- **StringTie**: Prioritizes alignment with existing reference transcriptomes.
+- **ISOQuant**: Excels in discovering novel isoforms.
+
+### Fusion Gene Detection
+
+- **JAFFAL**: Provides high-confidence identification of fusion events.
+
+## Conclusion
+
+Long-read sequencing technologies offer more detailed and accurate insights into transcriptome complexity compared to short-read approaches. The study highlights the significant advancements in bioinformatics tools and technologies, which are anticipated to enhance the accuracy of transcriptomic analyses further, leading to a deeper understanding of gene expression, fusion events, and isoform diversity.
+
+## Future Directions
+
+Anticipated advancements in bioinformatics tools and technologies are expected to improve the accuracy of transcriptomic analyses further, providing deeper insights into gene expression and transcriptome complexity.
