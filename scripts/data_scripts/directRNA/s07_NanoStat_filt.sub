@@ -1,0 +1,93 @@
+#!/bin/bash
+##
+## Running NanoStat on the filtered directRNA data set
+## ------------------------------------------
+##
+#PBS -N log_s07
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q half_day
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Clear any loaded modules and set the module directory
+module purge
+module use /apps/modules/all
+##
+## Stop the script execution on runtime errors
+set -e
+##
+## Activate nanopack_env environment
+source /apps/software/Miniconda3/22.11.1-1/bin/activate nanopack_env
+##
+## NanoStat version
+NanoStat --version
+echo ""
+##
+### Set up folder pathways
+directRNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/filtered_data/"
+cd "${directRNA}"
+##
+## Run NanoStat on the downsized fastq files
+echo "Stats for H9_2_1"
+NanoStat --fastq "SGNex_H9_directRNA_replicate2_run1_filt.fastq.gz" --threads 12
+echo ""
+##
+echo "Stats for H9_3_1"
+NanoStat --fastq "SGNex_H9_directRNA_replicate3_run1_filt.fastq.gz" --threads 12
+echo ""
+##
+echo "Stats for H9_4_1"
+NanoStat --fastq "SGNex_H9_directRNA_replicate4_run1_filt.fastq.gz" --threads 12
+echo ""
+##
+echo "Stats for HEYA8_1_1"
+NanoStat --fastq "SGNex_HEYA8_directRNA_replicate1_run1_filt.fastq.gz" --threads 12
+echo""
+##
+echo "Stats for HEYA8_2_1"
+NanoStat --fastq "SGNex_HEYA8_directRNA_replicate2_run1_filt.fastq.gz" --threads 12
+echo ""
+##
+echo "Stats for HEYA8_3_1"
+NanoStat --fastq "SGNex_HEYA8_directRNA_replicate3_run1_filt.fastq.gz" --threads 12
+echo ""
+##
+echo ""
+echo "Done"
+echo ""
+date
+echo ""
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#

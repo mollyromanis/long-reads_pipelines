@@ -1,0 +1,164 @@
+
+----------------------------------------------------------------------------
+  Nextflow:
+----------------------------------------------------------------------------
+    Description:
+      Nextflow is a reactive workflow framework and a programming DSL that
+      eases writing computational pipelines with complex data
+
+     Versions:
+        Nextflow/22.10.6
+        Nextflow/23.04.2
+        Nextflow/23.10.0
+
+----------------------------------------------------------------------------
+  For detailed information about a specific "Nextflow" package (including how to load the modules) use the module's full name.
+  Note that names that have a trailing (E) are extensions provided by other modules.
+  For example:
+
+     $ module spider Nextflow/23.10.0
+----------------------------------------------------------------------------
+
+ 
+
+
+----------------------------------------------------------------------------
+  EPI2ME: EPI2ME/5.1.10-1
+----------------------------------------------------------------------------
+    Description:
+      Nanopore sequencing can provide a wealth of data. The traditional
+      model of biological data analysis has wet lab scientists producing
+      data and bioinformaticians analysing that data to produce scientific
+      insights. EPI2ME products break this paradigm by enabling data
+      producers to inspect and analyse their data; freeing the time of
+      bioinformaticians for other tasks. 
+
+
+    This module can be loaded directly: module load EPI2ME/5.1.10-1
+
+    Help:
+      Description
+      ===========
+      Nanopore sequencing can provide a wealth of data. The traditional model of biological data analysis has wet lab scientists producing data and bioinformaticians analysing that data to produce scientific insights. EPI2ME products break this paradigm by enabling data producers to inspect and analyse their data; freeing the time of bioinformaticians for other tasks.
+      
+      More information
+      ================
+       - Homepage: https://labs.epi2me.io  
+      
+
+
+ 
+
+Installing the wf_transcritomes pipeline
+Nextflow 24.04.3 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [f01006c302]
+Launching `https://github.com/epi2me-labs/wf-transcriptomes` [cheesy_boltzmann] DSL2 - revision: 999fb4e44a [master]
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-transcriptomes v1.1.1-g999fb4e
+--------------------------------------------------------------------------------
+Typical pipeline command:
+
+  nextflow run epi2me-labs/wf-transcriptomes \ 
+	--de_analysis \ 
+	--direct_rna \ 
+	--fastq 'wf-transcriptomes-demo/differential_expression_fastq' \ 
+	--jaffal_annotation 'genCode22' \ 
+	--jaffal_genome 'hg38_chr20' \ 
+	--jaffal_refBase 'wf-transcriptomes-demo/chr20' \ 
+	--minimap2_index_opts '-k15' \ 
+	--ref_annotation 'wf-transcriptomes-demo/gencode.v22.annotation.chr20.gtf' \ 
+	--ref_genome 'wf-transcriptomes-demo/hg38_chr20.fa' \ 
+	--sample_sheet 'wf-transcriptomes-demo/sample_sheet.csv'
+
+Input Options
+  --fastq                   [string]  FASTQ files to use in the analysis.
+  --transcriptome_source    [choice]  Select how the transcriptome used for analysis should be prepared. [default: reference-guided]
+                                      * precomputed
+                                      * reference-guided
+  --ref_genome              [string]  Path to reference genome sequence [.fa/.fq/.fa.gz/fq.gz]. Required for reference-based workflow.
+  --ref_transcriptome       [string]  Transcriptome reference file. Required for precomputed transcriptome calculation and for differential expression 
+                                      analysis. 
+  --ref_annotation          [string]  A reference annotation in GFF2 or GFF3 format (extensions .gtf(.gz), .gff(.gz), .gff3(.gz)). Only annotation files from 
+                                      [Encode](https://www.encodeproject.org), [Ensembl](https://www.ensembl.org/index.html) and 
+                                      [NCBI](https://www.ncbi.nlm.nih.gov/) are supported. 
+  --direct_rna              [boolean] Set to true for direct RNA sequencing.
+  --analyse_unclassified    [boolean] Analyse unclassified reads from input directory. By default the workflow will not process reads in the unclassified 
+                                      directory. 
+
+Output Options
+  --out_dir                 [string]  Directory for output of all user-facing files. [default: output]
+
+Sample Options
+  --sample_sheet            [string]  A CSV file used to map barcodes to sample aliases. The sample sheet can be provided when the input data is a directory 
+                                      containing sub-directories with FASTQ files. If you are running the differential expression workflow, there must be an 
+                                      additional column `condition` with two labels, one of which must be `control` (e.g. `control` and `treated`). Control will 
+                                      indicate which samples will be used as the reference. There should be at least 3 repeats for each condition. 
+  --sample                  [string]  A single sample name for non-multiplexed data. Permissible if passing a single .fastq(.gz) file or directory of 
+                                      .fastq(.gz) files. 
+
+Options for reference-based workflow
+  --plot_gffcmp_stats       [boolean] Create a PDF of plots from showing gffcompare results [default: true]
+  --gffcompare_opts         [string]  Extra command-line options to give to gffcompare -r [default: -R]
+  --minimap2_index_opts     [string]  Extra command-line options for minimap2 indexing. [default: -k14]
+  --minimap2_opts           [string]  Additional command-line options for minimap2 alignment. [default: -uf]
+  --minimum_mapping_quality [integer] filter aligned reads by MAPQ quality. [default: 40]
+  --stringtie_opts          [string]  Extra command-line options for stringtie transcript assembly. [default: --conservative]
+
+Gene Fusion Detection Options
+  --jaffal_refBase          [string]  JAFFAl reference genome directory.
+  --jaffal_genome           [string]  Genome reference prefix. e.g. hg38. [default: hg38]
+  --jaffal_annotation       [string]  Annotation suffix. [default: genCode22]
+
+Differential Expression Options
+  --de_analysis             [boolean] Run DE anaylsis
+  --min_gene_expr           [integer] The minimum number of total mapped sequence reads required for a gene to be considered in differential transcript usage 
+                                      analysis. [default: 10] 
+  --min_feature_expr        [integer] The minimum number of reads assigned to a transcript for it to be considered in differential transcript usage 
+                                      analysis. [default: 3] 
+  --min_samps_gene_expr     [integer] Set the minimum number of samples in which a gene is expressed to be included in the differential transcript usage 
+                                      analysis. [default: 3] 
+  --min_samps_feature_expr  [integer] Set the minimum number of samples in which a transcript is expressed to be included in the differential transcript usage 
+                                      analysis. [default: 1] 
+
+Advanced Options
+  --threads                 [integer] Number of CPU threads. [default: 4]
+  --cdna_kit                [choice]  If cDNA reads are used, select the kit used. [default: SQK-PCS109]
+                                      * SQK-PCS109
+                                      * SQK-PCS110
+                                      * SQK-PCS111
+                                      * SQK-LSK114
+  --pychopper_backend       [choice]  Pychopper can use one of two available backends for identifying primers in the raw reads [default: edlib]
+                                      * edlib
+                                      * phmm
+  --pychopper_opts          [string]  Extra pychopper opts
+  --bundle_min_reads        [integer] Minimum size of bam bundle for parallel processing. [default: 50000]
+  --isoform_table_nrows     [integer] Maximum rows to dispay in the isoform report table [default: 5000]
+
+Miscellaneous Options
+  --disable_ping            [boolean] Enable to prevent sending a workflow ping.
+
+Other parameters
+  --monochrome_logs         [boolean] null
+  --validate_params         [boolean] null [default: true]
+  --show_hidden_params      [boolean] null
+
+!! Hiding 7 params, use --show_hidden_params to show them !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-transcriptomes for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+
+
+Done
+
+Sun Jul 14 22:21:51 BST 2024
+

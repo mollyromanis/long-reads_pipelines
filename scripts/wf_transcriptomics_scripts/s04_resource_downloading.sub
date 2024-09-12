@@ -1,0 +1,165 @@
+#!/bin/bash
+##
+## Prepare data for running wf-transcriptomics
+## ------------------------------------------
+##
+#PBS -N log_s04
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q three_hour
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Clear any loaded modules and set the module directory
+module purge
+module use /apps/modules/all
+##
+## Stop the script execution on runtime errors
+set -e
+##
+## Locate working directiory
+working_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/"
+mkdir -p "${working_folder}"
+cd "${working_folder}"
+##
+##### Resources Folder #####
+##
+## Create Resources folder
+echo "Creating resources folder"
+resources_folder="${working_folder}/gencode46/"
+mkdir -p "${resources_folder}"
+cd "${resources_folder}"
+echo ""
+##
+## Download fastq with all transcripts on the reference chromosomes (CHR)
+echo "Downloading transcriptome from GenCode"
+wget --no-verbose https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.transcripts.fa.gz
+echo ""
+##
+## Download basic gene annotation on the reference chromosomes (CHR)
+echo "Downloading genome annotation from GenCode"
+wget --no-verbose https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.basic.annotation.gtf.gz
+echo ""
+##
+## Unzip the downloaded GenCode resources
+echo "Unzipping folders"
+gunzip gencode.v46.transcripts.fa.gz
+gunzip gencode.v46.basic.annotation.gtf.gz
+echo ""
+##
+##### Jaffal Folder #####
+##
+## Make JAFFAL resources folder
+echo "Creating jaffal folder"
+jaffal_resources_folder="${working_folder}/jaffal_hg38_genCode22/"
+mkdir -p "${jaffal_resources_folder}"
+cd "${jaffal_resources_folder}"
+echo ""
+##
+## Download JAFFAL resources
+echo "Downloading JAFFAL resources ..."
+wget --no-verbose https://figshare.com/ndownloader/files/25410494
+tar -xf 25410494
+rm 25410494
+echo ""
+##
+##### Arrange fastq folders #####
+##
+echo "Preparing direct RNA fastq files"
+echo ""
+##
+## Make folder for fastq files
+directRNA_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/test_data/fastq_files/"
+mkdir -p "${directRNA_folder}"
+##
+## Filtered data folder
+filtered_data_RNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/filtered_data/"
+##
+## Copy the source files in a folder structure required by wf-transcriptome
+mkdir -p "${directRNA_folder}barcode01/"
+mkdir -p "${directRNA_folder}barcode02/"
+mkdir -p "${directRNA_folder}barcode03/"
+mkdir -p "${directRNA_folder}barcode04/"
+mkdir -p "${directRNA_folder}barcode05/"
+mkdir -p "${directRNA_folder}barcode06/"
+##
+cp "${filtered_data_RNA}SGNex_H9_directRNA_replicate2_run1_filt.fastq.gz" "${directRNA_folder}barcode01/"
+cp "${filtered_data_RNA}SGNex_H9_directRNA_replicate3_run1_filt.fastq.gz" "${directRNA_folder}barcode02/"
+cp "${filtered_data_RNA}SGNex_H9_directRNA_replicate4_run1_filt.fastq.gz" "${directRNA_folder}barcode03/"
+cp "${filtered_data_RNA}SGNex_HEYA8_directRNA_replicate1_run1_filt.fastq.gz" "${directRNA_folder}barcode04/"
+cp "${filtered_data_RNA}SGNex_HEYA8_directRNA_replicate2_run1_filt.fastq.gz" "${directRNA_folder}barcode05/"
+cp "${filtered_data_RNA}SGNex_HEYA8_directRNA_replicate3_run1_filt.fastq.gz" "${directRNA_folder}barcode06/"
+##
+## The sample sheet was prepares outside of this script and manually placed into the data folder.  
+echo "The sample sheet should be added manually:"
+echo "SG-Nex_data/directRNA/test_data/samples.csv"
+echo ""
+##
+echo "Preparing direct RNA fastq files"
+echo ""
+##
+## Make folder for fastq files
+cDNA_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/cDNA/test_data/fastq_files/"
+mkdir -p "${cDNA_folder}"
+##
+## Filtered data folder
+filtered_data_cDNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/cDNA/filtered_data/"
+##
+## Copy the source files in a folder structure required by wf-transcriptome
+mkdir -p "${cDNA_folder}barcode01/"
+mkdir -p "${cDNA_folder}barcode02/"
+mkdir -p "${cDNA_folder}barcode03/"
+mkdir -p "${cDNA_folder}barcode04/"
+mkdir -p "${cDNA_folder}barcode05/"
+mkdir -p "${cDNA_folder}barcode06/"
+##
+cp "${filtered_data_cDNA}SGNex_H9_cDNA_replicate2_run4_filt.fastq.gz" "${cDNA_folder}barcode01/"
+cp "${filtered_data_cDNA}SGNex_H9_cDNA_replicate3_run4_filt.fastq.gz" "${cDNA_folder}barcode02/"
+cp "${filtered_data_cDNA}SGNex_H9_cDNA_replicate4_run4_filt.fastq.gz" "${cDNA_folder}barcode03/"
+cp "${filtered_data_cDNA}SGNex_HEYA8_cDNA_replicate1_run4_filt.fastq.gz" "${cDNA_folder}barcode04/"
+cp "${filtered_data_cDNA}SGNex_HEYA8_cDNA_replicate2_run4_filt.fastq.gz" "${cDNA_folder}barcode05/"
+cp "${filtered_data_cDNA}SGNex_HEYA8_cDNA_replicate3_run4_filt.fastq.gz" "${cDNA_folder}barcode06/"
+##
+## The sample sheet was prepares outside of this script and manually placed into the data folder.  
+echo "The sample sheet should be added manually:"
+echo "SG-Nex_data/cDNA/test_data/samples.csv"
+echo ""
+##
+echo ""
+echo "Done"
+echo ""
+date
+echo ""
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#

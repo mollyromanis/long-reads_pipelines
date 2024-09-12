@@ -1,0 +1,35 @@
+Downsizing SGNex_H9_cDNA_replicate2_run4
+
+Downsizing SGNex_H9_cDNA_replicate3_run4
+
+Downsizing SGNex_H9_cDNA_replicate4_run4
+
+Downsizing SGNex_HEYA8_cDNA_replicate1_run4
+
+Downsizing SGNex_HEYA8_cDNA_replicate2_run4
+
+Downsizing SGNex_HEYA8_cDNA_replicate3_run3
+
+total 223461246
+drwxr-xr-x 2 s445216 domain users          11 Jul 12 16:29 .
+drwxr-xr-x 4 s445216 domain users           2 Jul 12 15:20 ..
+-rw-r--r-- 1 s445216 domain users 35688572393 Jul 28  2023 SGNex_H9_cDNA_replicate2_run4.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2853410035 Jul 12 15:43 SGNex_H9_cDNA_replicate2_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 36803479630 Jul 28  2023 SGNex_H9_cDNA_replicate3_run4.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2946961133 Jul 12 15:54 SGNex_H9_cDNA_replicate3_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 33096291707 Jul 28  2023 SGNex_H9_cDNA_replicate4_run4.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2652742386 Jul 12 16:04 SGNex_H9_cDNA_replicate4_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 37230765482 Jul 28  2023 SGNex_HEYA8_cDNA_replicate1_run4.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2967431556 Jul 12 16:16 SGNex_HEYA8_cDNA_replicate1_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 36097536834 Jul 28  2023 SGNex_HEYA8_cDNA_replicate2_run4.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2867382876 Jul 12 16:27 SGNex_HEYA8_cDNA_replicate2_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 32991580006 Jul 28  2023 SGNex_HEYA8_cDNA_replicate3_run3.fastq.gz
+-rw-r--r-- 1 s445216 domain users  2628158111 Jul 12 16:37 SGNex_HEYA8_cDNA_replicate3_run3_down.fastq.gz
+
+Moving downsized data
+
+
+Done
+
+Fri Jul 12 16:39:09 BST 2024
+

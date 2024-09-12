@@ -1,0 +1,1262 @@
+No modules loaded
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+Running ISOQuant with the following BAM files:
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_2_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_2_1_reads_aln_sorted_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_3_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_3_1_reads_aln_sorted_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_4_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_4_1_reads_aln_sorted_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_1_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_1_1_reads_aln_sorted_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_2_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_2_1_reads_aln_sorted_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_3_1_reads_aln_sorted_sorted.bam
+/mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_3_1_reads_aln_sorted_sorted_sorted.bam
+2024-08-06 21:00:16,964 - INFO - Running IsoQuant version 3.4.2
+2024-08-06 21:00:16,964 - WARNING - Output folder already exists, some files may be overwritten.
+2024-08-06 21:00:17,365 - INFO - Novel unspliced transcripts will not be reported, set --report_novel_unspliced true to discover them
+2024-08-06 21:00:17,366 - INFO -  === IsoQuant pipeline started === 
+2024-08-06 21:00:17,367 - INFO - gffutils version: 0.13
+2024-08-06 21:00:17,368 - INFO - pysam version: 0.22.1
+2024-08-06 21:00:17,368 - INFO - pyfaidx version: 0.8.1.1
+2024-08-06 21:00:17,377 - INFO - Checking input gene annotation
+2024-08-06 21:00:50,363 - INFO - Gene annotation seems to be correct
+2024-08-06 21:00:50,401 - INFO - Converting gene annotation file to .db format (takes a while)...
+/mnt/beegfs/home/s445216/.conda/envs/isoquant/lib/python3.8/site-packages/gffutils/create.py:770: UserWarning: It appears you have a gene feature in your GTF file. You may want to use the `disable_infer_genes=True` option to speed up database creation
+  warnings.warn(
+/mnt/beegfs/home/s445216/.conda/envs/isoquant/lib/python3.8/site-packages/gffutils/create.py:763: UserWarning: It appears you have a transcript feature in your GTF file. You may want to use the `disable_infer_transcripts=True` option to speed up database creation
+  warnings.warn(
+0 of 474500 (0%)4745 of 474500 (1%)9490 of 474500 (2%)14235 of 474500 (3%)18980 of 474500 (4%)23725 of 474500 (5%)28470 of 474500 (6%)33215 of 474500 (7%)37960 of 474500 (8%)42705 of 474500 (9%)47450 of 474500 (10%)52195 of 474500 (11%)56940 of 474500 (12%)61685 of 474500 (13%)66430 of 474500 (14%)71175 of 474500 (15%)75920 of 474500 (16%)80665 of 474500 (17%)85410 of 474500 (18%)90155 of 474500 (19%)94900 of 474500 (20%)99645 of 474500 (21%)104390 of 474500 (22%)109135 of 474500 (23%)113880 of 474500 (24%)118625 of 474500 (25%)123370 of 474500 (26%)128115 of 474500 (27%)132860 of 474500 (28%)137606 of 474500 (29%)142350 of 474500 (30%)147095 of 474500 (31%)151840 of 474500 (32%)156585 of 474500 (33%)161330 of 474500 (34%)166075 of 474500 (35%)170820 of 474500 (36%)175565 of 474500 (37%)180310 of 474500 (38%)185055 of 474500 (39%)189800 of 474500 (40%)194545 of 474500 (41%)199290 of 474500 (42%)204035 of 474500 (43%)208780 of 474500 (44%)213525 of 474500 (45%)218270 of 474500 (46%)223015 of 474500 (47%)227760 of 474500 (48%)232505 of 474500 (49%)237250 of 474500 (50%)241995 of 474500 (51%)246740 of 474500 (52%)251485 of 474500 (53%)256230 of 474500 (54%)260975 of 474500 (55%)265720 of 474500 (56%)270466 of 474500 (57%)275211 of 474500 (58%)279955 of 474500 (59%)284700 of 474500 (60%)289445 of 474500 (61%)294190 of 474500 (62%)298935 of 474500 (63%)303680 of 474500 (64%)308425 of 474500 (65%)313170 of 474500 (66%)317915 of 474500 (67%)322660 of 474500 (68%)327405 of 474500 (69%)332150 of 474500 (70%)336895 of 474500 (71%)341640 of 474500 (72%)346385 of 474500 (73%)351130 of 474500 (74%)355875 of 474500 (75%)360620 of 474500 (76%)365365 of 474500 (77%)370110 of 474500 (78%)374855 of 474500 (79%)379600 of 474500 (80%)384345 of 474500 (81%)389090 of 474500 (82%)393835 of 474500 (83%)398580 of 474500 (84%)403325 of 474500 (85%)408070 of 474500 (86%)412815 of 474500 (87%)417560 of 474500 (88%)2024-08-06 22:33:33,623 - INFO - Gene database written to /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/gencode.v46.basic.annotation.db
+2024-08-06 22:33:33,635 - INFO - Provide this database next time to avoid excessive conversion
+2024-08-06 22:33:33,637 - INFO - Loading gene database from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/gencode.v46.basic.annotation.db
+2024-08-06 22:33:33,898 - INFO - Loading reference genome from /mnt/beegfs/home/s445216/thesis_project/ONP/gencode46/GRCh38.primary_assembly.genome.fa
+2024-08-06 22:34:03,849 - INFO - Processing 1 experiment
+2024-08-06 22:34:03,849 - INFO - Processing experiment OUT
+2024-08-06 22:34:03,850 - INFO - Experiment has 12 BAM files: /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_2_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_2_1_reads_aln_sorted_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_3_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_3_1_reads_aln_sorted_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_4_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//H9_4_1_reads_aln_sorted_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_1_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_1_1_reads_aln_sorted_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_2_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_2_1_reads_aln_sorted_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_3_1_reads_aln_sorted_sorted.bam, /mnt/beegfs/home/s445216/thesis_project/ONP//bam_files//HEYA8_3_1_reads_aln_sorted_sorted_sorted.bam
+2024-08-06 22:34:03,851 - INFO - Collecting read alignments
+2024-08-06 22:34:05,107 - INFO - Processing chromosome chr8
+2024-08-06 22:34:05,124 - INFO - Processing chromosome chr12
+2024-08-06 22:34:05,131 - INFO - Processing chromosome chrX
+2024-08-06 22:34:05,136 - INFO - Processing chromosome chr10
+2024-08-06 22:34:05,137 - INFO - Processing chromosome chr14
+2024-08-06 22:34:05,137 - INFO - Processing chromosome chr3
+2024-08-06 22:34:05,138 - INFO - Processing chromosome chr13
+2024-08-06 22:34:05,138 - INFO - Processing chromosome chr15
+2024-08-06 22:34:05,138 - INFO - Processing chromosome chr4
+2024-08-06 22:34:05,138 - INFO - Processing chromosome chr2
+2024-08-06 22:34:05,144 - INFO - Processing chromosome chr11
+2024-08-06 22:34:05,157 - INFO - Processing chromosome chr5
+2024-08-06 22:34:05,159 - INFO - Processing chromosome chr9
+2024-08-06 22:34:05,160 - INFO - Processing chromosome chr1
+2024-08-06 22:34:05,164 - INFO - Processing chromosome chr7
+2024-08-06 22:34:05,165 - INFO - Processing chromosome chr6
+2024-08-06 22:40:01,667 - INFO - Finished processing chromosome chr14
+2024-08-06 22:40:02,180 - INFO - Processing chromosome chr16
+2024-08-06 22:40:03,788 - INFO - Finished processing chromosome chr13
+2024-08-06 22:40:04,328 - INFO - Processing chromosome chr17
+2024-08-06 22:40:50,822 - INFO - Finished processing chromosome chrX
+2024-08-06 22:40:51,345 - INFO - Processing chromosome chr18
+2024-08-06 22:42:36,845 - INFO - Finished processing chromosome chr4
+2024-08-06 22:42:37,355 - INFO - Processing chromosome chr20
+2024-08-06 22:43:52,398 - INFO - Finished processing chromosome chr10
+2024-08-06 22:43:52,951 - INFO - Processing chromosome chr19
+2024-08-06 22:44:04,517 - INFO - Finished processing chromosome chr15
+2024-08-06 22:44:05,065 - INFO - Processing chromosome chrY
+2024-08-06 22:44:05,498 - INFO - Finished processing chromosome chrY
+2024-08-06 22:44:05,914 - INFO - Processing chromosome chr22
+2024-08-06 22:44:08,854 - INFO - Finished processing chromosome chr18
+2024-08-06 22:44:09,311 - INFO - Processing chromosome chr21
+2024-08-06 22:44:40,071 - INFO - Finished processing chromosome chr9
+2024-08-06 22:44:40,664 - INFO - Processing chromosome KI270728.1
+2024-08-06 22:44:40,754 - INFO - Finished processing chromosome KI270728.1
+2024-08-06 22:44:41,173 - INFO - Processing chromosome KI270727.1
+2024-08-06 22:44:41,262 - INFO - Finished processing chromosome KI270727.1
+2024-08-06 22:44:41,671 - INFO - Processing chromosome KI270442.1
+2024-08-06 22:44:41,756 - INFO - Finished processing chromosome KI270442.1
+2024-08-06 22:44:42,181 - INFO - Processing chromosome KI270729.1
+2024-08-06 22:44:42,275 - INFO - Finished processing chromosome KI270729.1
+2024-08-06 22:44:42,716 - INFO - Processing chromosome GL000225.1
+2024-08-06 22:44:42,806 - INFO - Finished processing chromosome GL000225.1
+2024-08-06 22:44:43,230 - INFO - Processing chromosome KI270743.1
+2024-08-06 22:44:43,322 - INFO - Finished processing chromosome KI270743.1
+2024-08-06 22:44:43,729 - INFO - Processing chromosome GL000008.2
+2024-08-06 22:44:43,940 - INFO - Finished processing chromosome GL000008.2
+2024-08-06 22:44:44,358 - INFO - Processing chromosome GL000009.2
+2024-08-06 22:44:44,452 - INFO - Finished processing chromosome GL000009.2
+2024-08-06 22:44:44,871 - INFO - Processing chromosome KI270747.1
+2024-08-06 22:44:44,956 - INFO - Finished processing chromosome KI270747.1
+2024-08-06 22:44:45,380 - INFO - Processing chromosome KI270722.1
+2024-08-06 22:44:45,470 - INFO - Finished processing chromosome KI270722.1
+2024-08-06 22:44:45,878 - INFO - Processing chromosome GL000194.1
+2024-08-06 22:44:46,067 - INFO - Finished processing chromosome GL000194.1
+2024-08-06 22:44:46,491 - INFO - Processing chromosome KI270742.1
+2024-08-06 22:44:46,687 - INFO - Finished processing chromosome KI270742.1
+2024-08-06 22:44:47,113 - INFO - Processing chromosome GL000205.2
+2024-08-06 22:44:47,420 - INFO - Finished processing chromosome chr6
+2024-08-06 22:44:47,432 - INFO - Finished processing chromosome GL000205.2
+2024-08-06 22:44:47,876 - INFO - Processing chromosome GL000195.1
+2024-08-06 22:44:48,026 - INFO - Processing chromosome KI270736.1
+2024-08-06 22:44:48,116 - INFO - Finished processing chromosome KI270736.1
+2024-08-06 22:44:48,196 - INFO - Finished processing chromosome GL000195.1
+2024-08-06 22:44:48,533 - INFO - Processing chromosome KI270733.1
+2024-08-06 22:44:48,612 - INFO - Processing chromosome GL000224.1
+2024-08-06 22:44:48,702 - INFO - Finished processing chromosome GL000224.1
+2024-08-06 22:44:48,715 - INFO - Finished processing chromosome KI270733.1
+2024-08-06 22:44:49,126 - INFO - Processing chromosome GL000219.1
+2024-08-06 22:44:49,132 - INFO - Processing chromosome KI270719.1
+2024-08-06 22:44:49,219 - INFO - Finished processing chromosome KI270719.1
+2024-08-06 22:44:49,331 - INFO - Finished processing chromosome GL000219.1
+2024-08-06 22:44:49,622 - INFO - Processing chromosome GL000216.2
+2024-08-06 22:44:49,708 - INFO - Finished processing chromosome GL000216.2
+2024-08-06 22:44:49,742 - INFO - Processing chromosome KI270712.1
+2024-08-06 22:44:49,835 - INFO - Finished processing chromosome KI270712.1
+2024-08-06 22:44:50,130 - INFO - Processing chromosome KI270706.1
+2024-08-06 22:44:50,254 - INFO - Processing chromosome KI270725.1
+2024-08-06 22:44:50,325 - INFO - Finished processing chromosome KI270706.1
+2024-08-06 22:44:50,343 - INFO - Finished processing chromosome KI270725.1
+2024-08-06 22:44:50,745 - INFO - Processing chromosome KI270744.1
+2024-08-06 22:44:50,776 - INFO - Processing chromosome KI270734.1
+2024-08-06 22:44:50,833 - INFO - Finished processing chromosome KI270744.1
+2024-08-06 22:44:50,975 - INFO - Finished processing chromosome KI270734.1
+2024-08-06 22:44:51,234 - INFO - Processing chromosome GL000213.1
+2024-08-06 22:44:51,318 - INFO - Finished processing chromosome GL000213.1
+2024-08-06 22:44:51,410 - INFO - Processing chromosome GL000220.1
+2024-08-06 22:44:51,500 - INFO - Finished processing chromosome GL000220.1
+2024-08-06 22:44:51,719 - INFO - Processing chromosome KI270715.1
+2024-08-06 22:44:51,807 - INFO - Finished processing chromosome KI270715.1
+2024-08-06 22:44:51,939 - INFO - Processing chromosome GL000218.1
+2024-08-06 22:44:52,124 - INFO - Finished processing chromosome GL000218.1
+2024-08-06 22:44:52,214 - INFO - Processing chromosome KI270749.1
+2024-08-06 22:44:52,301 - INFO - Finished processing chromosome KI270749.1
+2024-08-06 22:44:52,559 - INFO - Processing chromosome KI270741.1
+2024-08-06 22:44:52,650 - INFO - Finished processing chromosome KI270741.1
+2024-08-06 22:44:52,713 - INFO - Processing chromosome GL000221.1
+2024-08-06 22:44:52,890 - INFO - Finished processing chromosome GL000221.1
+2024-08-06 22:44:53,072 - INFO - Processing chromosome KI270716.1
+2024-08-06 22:44:53,160 - INFO - Finished processing chromosome KI270716.1
+2024-08-06 22:44:53,292 - INFO - Processing chromosome KI270731.1
+2024-08-06 22:44:53,381 - INFO - Finished processing chromosome KI270731.1
+2024-08-06 22:44:53,581 - INFO - Processing chromosome KI270751.1
+2024-08-06 22:44:53,766 - INFO - Finished processing chromosome KI270751.1
+2024-08-06 22:44:53,787 - INFO - Processing chromosome KI270750.1
+2024-08-06 22:44:53,878 - INFO - Finished processing chromosome KI270750.1
+2024-08-06 22:44:54,192 - INFO - Processing chromosome KI270519.1
+2024-08-06 22:44:54,285 - INFO - Processing chromosome GL000214.1
+2024-08-06 22:44:54,288 - INFO - Finished processing chromosome KI270519.1
+2024-08-06 22:44:54,465 - INFO - Finished processing chromosome GL000214.1
+2024-08-06 22:44:54,705 - INFO - Processing chromosome KI270708.1
+2024-08-06 22:44:54,802 - INFO - Finished processing chromosome KI270708.1
+2024-08-06 22:44:54,868 - INFO - Processing chromosome KI270730.1
+2024-08-06 22:44:54,952 - INFO - Finished processing chromosome KI270730.1
+2024-08-06 22:44:55,230 - INFO - Processing chromosome KI270438.1
+2024-08-06 22:44:55,320 - INFO - Finished processing chromosome KI270438.1
+2024-08-06 22:44:55,370 - INFO - Processing chromosome KI270737.1
+2024-08-06 22:44:55,453 - INFO - Finished processing chromosome KI270737.1
+2024-08-06 22:44:55,742 - INFO - Processing chromosome KI270721.1
+2024-08-06 22:44:55,857 - INFO - Processing chromosome KI270738.1
+2024-08-06 22:44:55,928 - INFO - Finished processing chromosome KI270721.1
+2024-08-06 22:44:55,940 - INFO - Finished processing chromosome KI270738.1
+2024-08-06 22:44:56,350 - INFO - Processing chromosome KI270748.1
+2024-08-06 22:44:56,354 - INFO - Processing chromosome KI270435.1
+2024-08-06 22:44:56,448 - INFO - Finished processing chromosome KI270748.1
+2024-08-06 22:44:56,449 - INFO - Finished processing chromosome KI270435.1
+2024-08-06 22:44:56,859 - INFO - Processing chromosome KI270538.1
+2024-08-06 22:44:56,871 - INFO - Processing chromosome GL000208.1
+2024-08-06 22:44:56,947 - INFO - Finished processing chromosome KI270538.1
+2024-08-06 22:44:56,962 - INFO - Finished processing chromosome GL000208.1
+2024-08-06 22:44:57,352 - INFO - Processing chromosome KI270756.1
+2024-08-06 22:44:57,383 - INFO - Processing chromosome KI270739.1
+2024-08-06 22:44:57,446 - INFO - Finished processing chromosome KI270756.1
+2024-08-06 22:44:57,469 - INFO - Finished processing chromosome KI270739.1
+2024-08-06 22:44:57,850 - INFO - Processing chromosome KI270757.1
+2024-08-06 22:44:57,883 - INFO - Processing chromosome KI270709.1
+2024-08-06 22:44:57,936 - INFO - Finished processing chromosome KI270757.1
+2024-08-06 22:44:57,972 - INFO - Finished processing chromosome KI270709.1
+2024-08-06 22:44:58,350 - INFO - Processing chromosome KI270746.1
+2024-08-06 22:44:58,388 - INFO - Processing chromosome KI270753.1
+2024-08-06 22:44:58,434 - INFO - Finished processing chromosome KI270746.1
+2024-08-06 22:44:58,491 - INFO - Finished processing chromosome KI270753.1
+2024-08-06 22:44:58,840 - INFO - Processing chromosome KI270589.1
+2024-08-06 22:44:58,909 - INFO - Processing chromosome KI270726.1
+2024-08-06 22:44:58,926 - INFO - Finished processing chromosome KI270589.1
+2024-08-06 22:44:58,996 - INFO - Finished processing chromosome KI270726.1
+2024-08-06 22:44:59,345 - INFO - Processing chromosome KI270735.1
+2024-08-06 22:44:59,407 - INFO - Processing chromosome KI270711.1
+2024-08-06 22:44:59,434 - INFO - Finished processing chromosome KI270735.1
+2024-08-06 22:44:59,691 - INFO - Finished processing chromosome KI270711.1
+2024-08-06 22:44:59,847 - INFO - Processing chromosome KI270745.1
+2024-08-06 22:45:00,034 - INFO - Finished processing chromosome KI270745.1
+2024-08-06 22:45:00,107 - INFO - Processing chromosome KI270714.1
+2024-08-06 22:45:00,292 - INFO - Finished processing chromosome KI270714.1
+2024-08-06 22:45:00,451 - INFO - Processing chromosome KI270732.1
+2024-08-06 22:45:00,536 - INFO - Finished processing chromosome KI270732.1
+2024-08-06 22:45:00,702 - INFO - Processing chromosome KI270713.1
+2024-08-06 22:45:00,953 - INFO - Processing chromosome KI270754.1
+2024-08-06 22:45:00,992 - INFO - Finished processing chromosome KI270713.1
+2024-08-06 22:45:01,044 - INFO - Finished processing chromosome KI270754.1
+2024-08-06 22:45:01,506 - INFO - Processing chromosome KI270710.1
+2024-08-06 22:45:01,513 - INFO - Processing chromosome KI270717.1
+2024-08-06 22:45:01,592 - INFO - Finished processing chromosome KI270710.1
+2024-08-06 22:45:01,693 - INFO - Finished processing chromosome KI270717.1
+2024-08-06 22:45:02,017 - INFO - Processing chromosome KI270724.1
+2024-08-06 22:45:02,107 - INFO - Finished processing chromosome KI270724.1
+2024-08-06 22:45:02,110 - INFO - Processing chromosome KI270720.1
+2024-08-06 22:45:02,198 - INFO - Finished processing chromosome KI270720.1
+2024-08-06 22:45:02,526 - INFO - Processing chromosome KI270723.1
+2024-08-06 22:45:02,613 - INFO - Finished processing chromosome KI270723.1
+2024-08-06 22:45:02,615 - INFO - Processing chromosome KI270718.1
+2024-08-06 22:45:02,702 - INFO - Finished processing chromosome KI270718.1
+2024-08-06 22:45:03,027 - INFO - Processing chromosome KI270317.1
+2024-08-06 22:45:03,110 - INFO - Processing chromosome KI270740.1
+2024-08-06 22:45:03,115 - INFO - Finished processing chromosome KI270317.1
+2024-08-06 22:45:03,200 - INFO - Finished processing chromosome KI270740.1
+2024-08-06 22:45:03,560 - INFO - Processing chromosome KI270755.1
+2024-08-06 22:45:03,618 - INFO - Processing chromosome KI270707.1
+2024-08-06 22:45:03,644 - INFO - Finished processing chromosome KI270755.1
+2024-08-06 22:45:03,710 - INFO - Finished processing chromosome KI270707.1
+2024-08-06 22:45:04,048 - INFO - Processing chromosome KI270579.1
+2024-08-06 22:45:04,117 - INFO - Processing chromosome KI270752.1
+2024-08-06 22:45:04,142 - INFO - Finished processing chromosome KI270579.1
+2024-08-06 22:45:04,204 - INFO - Finished processing chromosome KI270752.1
+2024-08-06 22:45:04,584 - INFO - Processing chromosome KI270512.1
+2024-08-06 22:45:04,608 - INFO - Processing chromosome KI270322.1
+2024-08-06 22:45:04,674 - INFO - Finished processing chromosome KI270512.1
+2024-08-06 22:45:04,695 - INFO - Finished processing chromosome KI270322.1
+2024-08-06 22:45:05,091 - INFO - Processing chromosome chrM
+2024-08-06 22:45:05,097 - INFO - Processing chromosome GL000226.1
+2024-08-06 22:45:05,185 - INFO - Finished processing chromosome GL000226.1
+2024-08-06 22:45:05,607 - INFO - Processing chromosome KI270311.1
+2024-08-06 22:45:05,694 - INFO - Finished processing chromosome KI270311.1
+2024-08-06 22:45:06,101 - INFO - Processing chromosome KI270366.1
+2024-08-06 22:45:06,185 - INFO - Finished processing chromosome KI270366.1
+2024-08-06 22:45:06,591 - INFO - Processing chromosome KI270511.1
+2024-08-06 22:45:06,676 - INFO - Finished processing chromosome KI270511.1
+2024-08-06 22:45:07,090 - INFO - Processing chromosome KI270448.1
+2024-08-06 22:45:07,173 - INFO - Finished processing chromosome KI270448.1
+2024-08-06 22:45:07,575 - INFO - Processing chromosome KI270521.1
+2024-08-06 22:45:07,659 - INFO - Finished processing chromosome KI270521.1
+2024-08-06 22:45:08,088 - INFO - Processing chromosome KI270581.1
+2024-08-06 22:45:08,175 - INFO - Finished processing chromosome KI270581.1
+2024-08-06 22:45:08,598 - INFO - Processing chromosome KI270582.1
+2024-08-06 22:45:08,685 - INFO - Finished processing chromosome KI270582.1
+2024-08-06 22:45:09,099 - INFO - Processing chromosome KI270515.1
+2024-08-06 22:45:09,194 - INFO - Finished processing chromosome KI270515.1
+2024-08-06 22:45:09,621 - INFO - Processing chromosome KI270588.1
+2024-08-06 22:45:09,712 - INFO - Finished processing chromosome KI270588.1
+2024-08-06 22:45:10,130 - INFO - Processing chromosome KI270591.1
+2024-08-06 22:45:10,217 - INFO - Finished processing chromosome KI270591.1
+2024-08-06 22:45:10,636 - INFO - Processing chromosome KI270522.1
+2024-08-06 22:45:10,726 - INFO - Finished processing chromosome KI270522.1
+2024-08-06 22:45:11,157 - INFO - Processing chromosome KI270507.1
+2024-08-06 22:45:11,244 - INFO - Finished processing chromosome KI270507.1
+2024-08-06 22:45:11,668 - INFO - Processing chromosome KI270590.1
+2024-08-06 22:45:11,768 - INFO - Finished processing chromosome KI270590.1
+2024-08-06 22:45:12,192 - INFO - Processing chromosome KI270584.1
+2024-08-06 22:45:12,283 - INFO - Finished processing chromosome KI270584.1
+2024-08-06 22:45:12,705 - INFO - Processing chromosome KI270320.1
+2024-08-06 22:45:12,798 - INFO - Finished processing chromosome KI270320.1
+2024-08-06 22:45:13,225 - INFO - Processing chromosome KI270382.1
+2024-08-06 22:45:13,315 - INFO - Finished processing chromosome KI270382.1
+2024-08-06 22:45:13,747 - INFO - Processing chromosome KI270468.1
+2024-08-06 22:45:13,836 - INFO - Finished processing chromosome KI270468.1
+2024-08-06 22:45:14,260 - INFO - Processing chromosome KI270467.1
+2024-08-06 22:45:14,356 - INFO - Finished processing chromosome KI270467.1
+2024-08-06 22:45:14,790 - INFO - Processing chromosome KI270362.1
+2024-08-06 22:45:14,878 - INFO - Finished processing chromosome KI270362.1
+2024-08-06 22:45:15,299 - INFO - Processing chromosome KI270517.1
+2024-08-06 22:45:15,394 - INFO - Finished processing chromosome KI270517.1
+2024-08-06 22:45:15,814 - INFO - Processing chromosome KI270593.1
+2024-08-06 22:45:15,903 - INFO - Finished processing chromosome KI270593.1
+2024-08-06 22:45:16,325 - INFO - Processing chromosome KI270528.1
+2024-08-06 22:45:16,412 - INFO - Finished processing chromosome KI270528.1
+2024-08-06 22:45:16,842 - INFO - Processing chromosome KI270587.1
+2024-08-06 22:45:16,927 - INFO - Finished processing chromosome KI270587.1
+2024-08-06 22:45:17,341 - INFO - Processing chromosome KI270364.1
+2024-08-06 22:45:17,427 - INFO - Finished processing chromosome KI270364.1
+2024-08-06 22:45:17,834 - INFO - Processing chromosome KI270371.1
+2024-08-06 22:45:17,917 - INFO - Finished processing chromosome KI270371.1
+2024-08-06 22:45:18,320 - INFO - Processing chromosome KI270333.1
+2024-08-06 22:45:18,411 - INFO - Finished processing chromosome KI270333.1
+2024-08-06 22:45:18,816 - INFO - Processing chromosome KI270374.1
+2024-08-06 22:45:18,900 - INFO - Finished processing chromosome KI270374.1
+2024-08-06 22:45:19,318 - INFO - Processing chromosome KI270411.1
+2024-08-06 22:45:19,407 - INFO - Finished processing chromosome KI270411.1
+2024-08-06 22:45:19,828 - INFO - Processing chromosome KI270414.1
+2024-08-06 22:45:19,917 - INFO - Finished processing chromosome KI270414.1
+2024-08-06 22:45:20,358 - INFO - Processing chromosome KI270510.1
+2024-08-06 22:45:20,452 - INFO - Finished processing chromosome KI270510.1
+2024-08-06 22:45:20,879 - INFO - Processing chromosome KI270390.1
+2024-08-06 22:45:20,970 - INFO - Finished processing chromosome KI270390.1
+2024-08-06 22:45:21,405 - INFO - Processing chromosome KI270375.1
+2024-08-06 22:45:21,495 - INFO - Finished processing chromosome KI270375.1
+2024-08-06 22:45:21,920 - INFO - Processing chromosome KI270420.1
+2024-08-06 22:45:22,022 - INFO - Finished processing chromosome KI270420.1
+2024-08-06 22:45:22,445 - INFO - Processing chromosome KI270509.1
+2024-08-06 22:45:22,537 - INFO - Finished processing chromosome KI270509.1
+2024-08-06 22:45:22,952 - INFO - Processing chromosome KI270315.1
+2024-08-06 22:45:23,037 - INFO - Finished processing chromosome KI270315.1
+2024-08-06 22:45:23,451 - INFO - Processing chromosome KI270302.1
+2024-08-06 22:45:23,540 - INFO - Finished processing chromosome KI270302.1
+2024-08-06 22:45:23,943 - INFO - Processing chromosome KI270518.1
+2024-08-06 22:45:24,030 - INFO - Finished processing chromosome KI270518.1
+2024-08-06 22:45:24,446 - INFO - Processing chromosome KI270530.1
+2024-08-06 22:45:24,535 - INFO - Finished processing chromosome KI270530.1
+2024-08-06 22:45:24,953 - INFO - Processing chromosome KI270304.1
+2024-08-06 22:45:25,044 - INFO - Finished processing chromosome KI270304.1
+2024-08-06 22:45:25,474 - INFO - Processing chromosome KI270418.1
+2024-08-06 22:45:25,558 - INFO - Finished processing chromosome KI270418.1
+2024-08-06 22:45:25,964 - INFO - Processing chromosome KI270424.1
+2024-08-06 22:45:26,050 - INFO - Finished processing chromosome KI270424.1
+2024-08-06 22:45:26,466 - INFO - Processing chromosome KI270417.1
+2024-08-06 22:45:26,559 - INFO - Finished processing chromosome KI270417.1
+2024-08-06 22:45:26,984 - INFO - Processing chromosome KI270508.1
+2024-08-06 22:45:27,074 - INFO - Finished processing chromosome KI270508.1
+2024-08-06 22:45:27,091 - INFO - Finished processing chromosome chr7
+2024-08-06 22:45:27,513 - INFO - Processing chromosome KI270303.1
+2024-08-06 22:45:27,615 - INFO - Finished processing chromosome KI270303.1
+2024-08-06 22:45:27,651 - INFO - Processing chromosome KI270381.1
+2024-08-06 22:45:27,746 - INFO - Finished processing chromosome KI270381.1
+2024-08-06 22:45:28,035 - INFO - Processing chromosome KI270529.1
+2024-08-06 22:45:28,125 - INFO - Finished processing chromosome KI270529.1
+2024-08-06 22:45:28,202 - INFO - Processing chromosome KI270425.1
+2024-08-06 22:45:28,291 - INFO - Finished processing chromosome KI270425.1
+2024-08-06 22:45:28,540 - INFO - Processing chromosome KI270396.1
+2024-08-06 22:45:28,628 - INFO - Finished processing chromosome KI270396.1
+2024-08-06 22:45:28,717 - INFO - Processing chromosome KI270363.1
+2024-08-06 22:45:28,818 - INFO - Finished processing chromosome KI270363.1
+2024-08-06 22:45:29,037 - INFO - Processing chromosome KI270386.1
+2024-08-06 22:45:29,122 - INFO - Finished processing chromosome KI270386.1
+2024-08-06 22:45:29,243 - INFO - Processing chromosome KI270465.1
+2024-08-06 22:45:29,331 - INFO - Finished processing chromosome KI270465.1
+2024-08-06 22:45:29,539 - INFO - Processing chromosome KI270383.1
+2024-08-06 22:45:29,625 - INFO - Finished processing chromosome KI270383.1
+2024-08-06 22:45:29,753 - INFO - Processing chromosome KI270384.1
+2024-08-06 22:45:29,852 - INFO - Finished processing chromosome KI270384.1
+2024-08-06 22:45:30,034 - INFO - Processing chromosome KI270330.1
+2024-08-06 22:45:30,117 - INFO - Finished processing chromosome KI270330.1
+2024-08-06 22:45:30,283 - INFO - Processing chromosome KI270372.1
+2024-08-06 22:45:30,377 - INFO - Finished processing chromosome KI270372.1
+2024-08-06 22:45:30,525 - INFO - Processing chromosome KI270548.1
+2024-08-06 22:45:30,614 - INFO - Finished processing chromosome KI270548.1
+2024-08-06 22:45:30,827 - INFO - Processing chromosome KI270580.1
+2024-08-06 22:45:30,926 - INFO - Finished processing chromosome KI270580.1
+2024-08-06 22:45:31,019 - INFO - Processing chromosome KI270387.1
+2024-08-06 22:45:31,103 - INFO - Finished processing chromosome KI270387.1
+2024-08-06 22:45:31,350 - INFO - Processing chromosome KI270391.1
+2024-08-06 22:45:31,438 - INFO - Finished processing chromosome KI270391.1
+2024-08-06 22:45:31,516 - INFO - Processing chromosome KI270305.1
+2024-08-06 22:45:31,600 - INFO - Finished processing chromosome KI270305.1
+2024-08-06 22:45:31,846 - INFO - Processing chromosome KI270373.1
+2024-08-06 22:45:31,929 - INFO - Finished processing chromosome KI270373.1
+2024-08-06 22:45:32,003 - INFO - Processing chromosome KI270422.1
+2024-08-06 22:45:32,088 - INFO - Finished processing chromosome KI270422.1
+2024-08-06 22:45:32,340 - INFO - Processing chromosome KI270316.1
+2024-08-06 22:45:32,430 - INFO - Finished processing chromosome KI270316.1
+2024-08-06 22:45:32,498 - INFO - Processing chromosome KI270338.1
+2024-08-06 22:45:32,583 - INFO - Finished processing chromosome KI270338.1
+2024-08-06 22:45:32,858 - INFO - Processing chromosome KI270340.1
+2024-08-06 22:45:32,943 - INFO - Finished processing chromosome KI270340.1
+2024-08-06 22:45:32,989 - INFO - Processing chromosome KI270583.1
+2024-08-06 22:45:33,072 - INFO - Finished processing chromosome KI270583.1
+2024-08-06 22:45:33,376 - INFO - Processing chromosome KI270334.1
+2024-08-06 22:45:33,462 - INFO - Finished processing chromosome KI270334.1
+2024-08-06 22:45:33,470 - INFO - Processing chromosome KI270429.1
+2024-08-06 22:45:33,554 - INFO - Finished processing chromosome KI270429.1
+2024-08-06 22:45:33,876 - INFO - Processing chromosome KI270393.1
+2024-08-06 22:45:33,953 - INFO - Processing chromosome KI270516.1
+2024-08-06 22:45:33,962 - INFO - Finished processing chromosome KI270393.1
+2024-08-06 22:45:34,036 - INFO - Finished processing chromosome KI270516.1
+2024-08-06 22:45:34,372 - INFO - Processing chromosome KI270389.1
+2024-08-06 22:45:34,434 - INFO - Processing chromosome KI270466.1
+2024-08-06 22:45:34,460 - INFO - Finished processing chromosome KI270389.1
+2024-08-06 22:45:34,517 - INFO - Finished processing chromosome KI270466.1
+2024-08-06 22:45:34,898 - INFO - Processing chromosome KI270388.1
+2024-08-06 22:45:34,927 - INFO - Processing chromosome KI270544.1
+2024-08-06 22:45:34,992 - INFO - Finished processing chromosome KI270388.1
+2024-08-06 22:45:35,012 - INFO - Finished processing chromosome KI270544.1
+2024-08-06 22:45:35,414 - INFO - Processing chromosome KI270412.1
+2024-08-06 22:45:35,422 - INFO - Processing chromosome KI270310.1
+2024-08-06 22:45:35,499 - INFO - Finished processing chromosome KI270412.1
+2024-08-06 22:45:35,513 - INFO - Finished processing chromosome KI270310.1
+2024-08-06 22:45:35,909 - INFO - Processing chromosome KI270395.1
+2024-08-06 22:45:35,952 - INFO - Processing chromosome KI270376.1
+2024-08-06 22:45:35,994 - INFO - Finished processing chromosome KI270395.1
+2024-08-06 22:45:36,042 - INFO - Finished processing chromosome KI270376.1
+2024-08-06 22:45:36,396 - INFO - Processing chromosome KI270337.1
+2024-08-06 22:45:36,460 - INFO - Processing chromosome KI270335.1
+2024-08-06 22:45:36,486 - INFO - Finished processing chromosome KI270337.1
+2024-08-06 22:45:36,554 - INFO - Finished processing chromosome KI270335.1
+2024-08-06 22:45:36,897 - INFO - Processing chromosome KI270378.1
+2024-08-06 22:45:36,976 - INFO - Processing chromosome KI270379.1
+2024-08-06 22:45:36,986 - INFO - Finished processing chromosome KI270378.1
+2024-08-06 22:45:37,066 - INFO - Finished processing chromosome KI270379.1
+2024-08-06 22:45:37,405 - INFO - Processing chromosome KI270329.1
+2024-08-06 22:45:37,486 - INFO - Processing chromosome KI270419.1
+2024-08-06 22:45:37,490 - INFO - Finished processing chromosome KI270329.1
+2024-08-06 22:45:37,587 - INFO - Finished processing chromosome KI270419.1
+2024-08-06 22:45:37,899 - INFO - Processing chromosome KI270336.1
+2024-08-06 22:45:37,983 - INFO - Finished processing chromosome KI270336.1
+2024-08-06 22:45:37,996 - INFO - Processing chromosome KI270312.1
+2024-08-06 22:45:38,083 - INFO - Finished processing chromosome KI270312.1
+2024-08-06 22:45:38,388 - INFO - Processing chromosome KI270539.1
+2024-08-06 22:45:38,473 - INFO - Finished processing chromosome KI270539.1
+2024-08-06 22:45:38,495 - INFO - Processing chromosome KI270385.1
+2024-08-06 22:45:38,590 - INFO - Finished processing chromosome KI270385.1
+2024-08-06 22:45:38,906 - INFO - Processing chromosome KI270423.1
+2024-08-06 22:45:38,988 - INFO - Finished processing chromosome KI270423.1
+2024-08-06 22:45:39,052 - INFO - Processing chromosome KI270392.1
+2024-08-06 22:45:39,136 - INFO - Finished processing chromosome KI270392.1
+2024-08-06 22:45:39,392 - INFO - Processing chromosome KI270394.1
+2024-08-06 22:45:39,476 - INFO - Finished processing chromosome KI270394.1
+2024-08-06 22:46:22,611 - INFO - Finished processing chromosome chr21
+2024-08-06 22:46:36,637 - INFO - Finished processing chromosome chr11
+2024-08-06 22:47:16,149 - INFO - Finished processing chromosome chrM
+2024-08-06 22:47:52,520 - INFO - Finished processing chromosome chr16
+2024-08-06 22:47:53,830 - INFO - Finished processing chromosome chr8
+2024-08-06 22:48:04,001 - INFO - Finished processing chromosome chr12
+2024-08-06 22:48:15,265 - INFO - Finished processing chromosome chr20
+2024-08-06 22:48:40,789 - INFO - Finished processing chromosome chr22
+2024-08-06 22:49:14,056 - INFO - Finished processing chromosome chr5
+2024-08-06 22:50:29,109 - INFO - Finished processing chromosome chr3
+2024-08-06 22:52:09,765 - INFO - Finished processing chromosome chr2
+2024-08-06 22:52:27,241 - INFO - Finished processing chromosome chr17
+2024-08-06 22:54:23,511 - INFO - Finished processing chromosome chr19
+2024-08-06 22:54:26,503 - INFO - Finished processing chromosome chr1
+2024-08-06 22:54:28,989 - INFO - Counting multimapped reads
+2024-08-06 22:54:28,990 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr1
+2024-08-06 22:54:55,397 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr2
+2024-08-06 22:55:12,251 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr3
+2024-08-06 22:55:29,651 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr4
+2024-08-06 22:55:35,849 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr5
+2024-08-06 22:55:50,102 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr6
+2024-08-06 22:56:06,104 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr7
+2024-08-06 22:56:16,047 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrX
+2024-08-06 22:56:23,574 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr8
+2024-08-06 22:56:38,731 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr9
+2024-08-06 22:56:49,746 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr11
+2024-08-06 22:57:07,561 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr10
+2024-08-06 22:57:17,953 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr12
+2024-08-06 22:57:40,891 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr13
+2024-08-06 22:57:45,484 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr14
+2024-08-06 22:57:51,230 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr15
+2024-08-06 22:57:59,570 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr16
+2024-08-06 22:58:09,248 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr17
+2024-08-06 22:58:30,131 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr18
+2024-08-06 22:58:33,017 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr20
+2024-08-06 22:58:40,182 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr19
+2024-08-06 22:59:00,134 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrY
+2024-08-06 22:59:00,138 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr22
+2024-08-06 22:59:06,463 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr21
+2024-08-06 22:59:08,480 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270728.1
+2024-08-06 22:59:08,482 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270727.1
+2024-08-06 22:59:08,483 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270442.1
+2024-08-06 22:59:08,484 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270729.1
+2024-08-06 22:59:08,485 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000225.1
+2024-08-06 22:59:08,486 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270743.1
+2024-08-06 22:59:08,487 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000008.2
+2024-08-06 22:59:08,490 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000009.2
+2024-08-06 22:59:08,491 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270747.1
+2024-08-06 22:59:08,493 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270722.1
+2024-08-06 22:59:08,494 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000194.1
+2024-08-06 22:59:08,495 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270742.1
+2024-08-06 22:59:08,498 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000205.2
+2024-08-06 22:59:08,500 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000195.1
+2024-08-06 22:59:08,503 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270736.1
+2024-08-06 22:59:08,505 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270733.1
+2024-08-06 22:59:08,506 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000224.1
+2024-08-06 22:59:08,508 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000219.1
+2024-08-06 22:59:08,510 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270719.1
+2024-08-06 22:59:08,511 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000216.2
+2024-08-06 22:59:08,512 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270712.1
+2024-08-06 22:59:08,513 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270706.1
+2024-08-06 22:59:08,515 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270725.1
+2024-08-06 22:59:08,516 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270744.1
+2024-08-06 22:59:08,517 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270734.1
+2024-08-06 22:59:08,519 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000213.1
+2024-08-06 22:59:08,520 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000220.1
+2024-08-06 22:59:08,521 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270715.1
+2024-08-06 22:59:08,522 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000218.1
+2024-08-06 22:59:08,523 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270749.1
+2024-08-06 22:59:08,525 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270741.1
+2024-08-06 22:59:08,526 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000221.1
+2024-08-06 22:59:08,527 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270716.1
+2024-08-06 22:59:08,529 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270731.1
+2024-08-06 22:59:08,530 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270751.1
+2024-08-06 22:59:08,531 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270750.1
+2024-08-06 22:59:08,532 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270519.1
+2024-08-06 22:59:08,532 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000214.1
+2024-08-06 22:59:08,534 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270708.1
+2024-08-06 22:59:08,535 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270730.1
+2024-08-06 22:59:08,536 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270438.1
+2024-08-06 22:59:08,537 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270737.1
+2024-08-06 22:59:08,537 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270721.1
+2024-08-06 22:59:08,539 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270738.1
+2024-08-06 22:59:08,540 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270748.1
+2024-08-06 22:59:08,541 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270435.1
+2024-08-06 22:59:08,542 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000208.1
+2024-08-06 22:59:08,543 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270538.1
+2024-08-06 22:59:08,544 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270756.1
+2024-08-06 22:59:08,545 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270739.1
+2024-08-06 22:59:08,545 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270757.1
+2024-08-06 22:59:08,546 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270709.1
+2024-08-06 22:59:08,547 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270746.1
+2024-08-06 22:59:08,548 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270753.1
+2024-08-06 22:59:08,549 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270589.1
+2024-08-06 22:59:08,549 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270726.1
+2024-08-06 22:59:08,550 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270735.1
+2024-08-06 22:59:08,551 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270711.1
+2024-08-06 22:59:08,553 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270745.1
+2024-08-06 22:59:08,554 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270714.1
+2024-08-06 22:59:08,555 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270732.1
+2024-08-06 22:59:08,556 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270713.1
+2024-08-06 22:59:08,557 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270754.1
+2024-08-06 22:59:08,559 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270710.1
+2024-08-06 22:59:08,560 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270717.1
+2024-08-06 22:59:08,562 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270724.1
+2024-08-06 22:59:08,563 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270720.1
+2024-08-06 22:59:08,563 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270723.1
+2024-08-06 22:59:08,564 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270718.1
+2024-08-06 22:59:08,565 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270317.1
+2024-08-06 22:59:08,566 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270740.1
+2024-08-06 22:59:08,567 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270755.1
+2024-08-06 22:59:08,568 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270707.1
+2024-08-06 22:59:08,569 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270579.1
+2024-08-06 22:59:08,570 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270752.1
+2024-08-06 22:59:08,571 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270512.1
+2024-08-06 22:59:08,572 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270322.1
+2024-08-06 22:59:08,573 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrM
+2024-08-06 22:59:21,811 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000226.1
+2024-08-06 22:59:21,814 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270311.1
+2024-08-06 22:59:21,815 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270366.1
+2024-08-06 22:59:21,817 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270511.1
+2024-08-06 22:59:21,818 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270448.1
+2024-08-06 22:59:21,819 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270521.1
+2024-08-06 22:59:21,821 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270581.1
+2024-08-06 22:59:21,822 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270582.1
+2024-08-06 22:59:21,824 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270515.1
+2024-08-06 22:59:21,824 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270588.1
+2024-08-06 22:59:21,825 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270591.1
+2024-08-06 22:59:21,826 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270522.1
+2024-08-06 22:59:21,827 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270507.1
+2024-08-06 22:59:21,828 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270590.1
+2024-08-06 22:59:21,829 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270584.1
+2024-08-06 22:59:21,831 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270320.1
+2024-08-06 22:59:21,832 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270382.1
+2024-08-06 22:59:21,833 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270468.1
+2024-08-06 22:59:21,834 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270467.1
+2024-08-06 22:59:21,835 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270362.1
+2024-08-06 22:59:21,836 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270517.1
+2024-08-06 22:59:21,836 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270593.1
+2024-08-06 22:59:21,837 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270528.1
+2024-08-06 22:59:21,838 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270587.1
+2024-08-06 22:59:21,839 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270364.1
+2024-08-06 22:59:21,840 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270371.1
+2024-08-06 22:59:21,841 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270333.1
+2024-08-06 22:59:21,842 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270374.1
+2024-08-06 22:59:21,843 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270411.1
+2024-08-06 22:59:21,844 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270414.1
+2024-08-06 22:59:21,845 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270510.1
+2024-08-06 22:59:21,846 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270390.1
+2024-08-06 22:59:21,847 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270375.1
+2024-08-06 22:59:21,848 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270420.1
+2024-08-06 22:59:21,848 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270509.1
+2024-08-06 22:59:21,849 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270315.1
+2024-08-06 22:59:21,850 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270302.1
+2024-08-06 22:59:21,851 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270518.1
+2024-08-06 22:59:21,852 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270530.1
+2024-08-06 22:59:21,852 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270304.1
+2024-08-06 22:59:21,853 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270418.1
+2024-08-06 22:59:21,854 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270424.1
+2024-08-06 22:59:21,855 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270417.1
+2024-08-06 22:59:21,856 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270508.1
+2024-08-06 22:59:21,857 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270303.1
+2024-08-06 22:59:21,858 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270381.1
+2024-08-06 22:59:21,859 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270529.1
+2024-08-06 22:59:21,859 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270425.1
+2024-08-06 22:59:21,860 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270396.1
+2024-08-06 22:59:21,861 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270363.1
+2024-08-06 22:59:21,862 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270386.1
+2024-08-06 22:59:21,863 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270465.1
+2024-08-06 22:59:21,864 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270383.1
+2024-08-06 22:59:21,865 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270384.1
+2024-08-06 22:59:21,866 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270330.1
+2024-08-06 22:59:21,866 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270372.1
+2024-08-06 22:59:21,867 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270548.1
+2024-08-06 22:59:21,868 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270580.1
+2024-08-06 22:59:21,869 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270387.1
+2024-08-06 22:59:21,870 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270391.1
+2024-08-06 22:59:21,870 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270305.1
+2024-08-06 22:59:21,871 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270373.1
+2024-08-06 22:59:21,872 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270422.1
+2024-08-06 22:59:21,873 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270316.1
+2024-08-06 22:59:21,874 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270338.1
+2024-08-06 22:59:21,874 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270340.1
+2024-08-06 22:59:21,875 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270583.1
+2024-08-06 22:59:21,876 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270334.1
+2024-08-06 22:59:21,877 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270429.1
+2024-08-06 22:59:21,878 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270393.1
+2024-08-06 22:59:21,879 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270516.1
+2024-08-06 22:59:21,880 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270389.1
+2024-08-06 22:59:21,881 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270466.1
+2024-08-06 22:59:21,881 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270388.1
+2024-08-06 22:59:21,882 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270544.1
+2024-08-06 22:59:21,883 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270310.1
+2024-08-06 22:59:21,884 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270412.1
+2024-08-06 22:59:21,885 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270395.1
+2024-08-06 22:59:21,886 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270376.1
+2024-08-06 22:59:21,887 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270337.1
+2024-08-06 22:59:21,888 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270335.1
+2024-08-06 22:59:21,889 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270378.1
+2024-08-06 22:59:21,890 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270379.1
+2024-08-06 22:59:21,891 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270329.1
+2024-08-06 22:59:21,892 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270419.1
+2024-08-06 22:59:21,893 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270336.1
+2024-08-06 22:59:21,894 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270312.1
+2024-08-06 22:59:21,895 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270539.1
+2024-08-06 22:59:21,896 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270385.1
+2024-08-06 22:59:21,897 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270423.1
+2024-08-06 22:59:21,898 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270392.1
+2024-08-06 22:59:21,899 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270394.1
+2024-08-06 22:59:21,900 - INFO - Resolving multimappers
+2024-08-06 22:59:21,973 - INFO - Read d3e0dfc3-1fbc-4a29-b13c-d3493622dd67 seems to have duplicated alignment entries at chr1: 14404 and will be ignored. 
+2024-08-06 22:59:21,974 - INFO - Read 52da3329-b104-4ee5-b19c-cf6cdecc766e seems to have duplicated alignment entries at chr1: 14406 and will be ignored. 
+2024-08-06 22:59:21,975 - INFO - Read 6f29e364-a3ed-444a-a9c5-df6d2f813cab seems to have duplicated alignment entries at chr1: 14406 and will be ignored. 
+2024-08-06 22:59:21,975 - INFO - Read 4412b4bf-731f-4306-b5c5-cbc69bd212c2 seems to have duplicated alignment entries at chr1: 14411 and will be ignored. 
+2024-08-06 22:59:21,976 - WARNING - More possible duplicates were detected but will not be printed. Use --debug to see all of them in the isoquant.log.All duplicated entries will be ignored. This maybe caused either by the same read having more than one alignment with the same reference id, start and end coordinates, or by duplicated read names in the original files. 
+2024-08-06 23:01:07,330 - INFO - Multimappers resolved
+2024-08-06 23:01:07,440 - INFO - Alignments collected, overall alignment statistics:
+2024-08-06 23:01:07,440 - INFO - primary: 6417510
+2024-08-06 23:01:07,441 - INFO - unaligned: 0
+2024-08-06 23:01:07,443 - INFO - Finishing read assignment, total assignments 3227052, polyA percentage 4.3
+2024-08-06 23:01:09,640 - INFO - Read assignments files saved to /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save*. 
+2024-08-06 23:01:09,641 - INFO - To keep these intermediate files for debug purposes use --keep_tmp flag
+2024-08-06 23:01:09,643 - INFO - Total alignments used for analysis: 3227052, polyA tail detected in 137627 (4.3%)
+2024-08-06 23:01:09,643 - WARNING - PolyA percentage is suspiciously low. IsoQuant expects non-polya-trimmed reads. If you aim to construct transcript models, consider using --polya_requirement option.
+2024-08-06 23:01:09,644 - INFO - Processing assigned reads OUT
+2024-08-06 23:01:09,645 - INFO - Transcript models construction is turned on
+2024-08-06 23:01:09,650 - INFO - Transcript construction options:
+2024-08-06 23:01:09,650 - INFO -   Novel monoexonic transcripts will be reported: no
+2024-08-06 23:01:09,651 - INFO -   PolyA tails are required for multi-exon transcripts to be reported: no
+2024-08-06 23:01:09,651 - INFO -   PolyA tails are required for 2-exon transcripts to be reported: yes
+2024-08-06 23:01:09,652 - INFO -   PolyA tails are required for known monoexon transcripts to be reported: yes
+2024-08-06 23:01:09,652 - INFO -   PolyA tails are required for novel monoexon transcripts to be reported: yes
+2024-08-06 23:01:09,653 - INFO -   Splice site reporting level: only_stranded
+2024-08-06 23:01:09,708 - INFO - Processing chromosome chr1
+2024-08-06 23:01:09,708 - INFO - Processing chromosome chr3
+2024-08-06 23:01:09,708 - INFO - Processing chromosome chr2
+2024-08-06 23:01:09,709 - INFO - Processing chromosome chr4
+2024-08-06 23:01:09,711 - INFO - Processing chromosome chr5
+2024-08-06 23:01:09,711 - INFO - Processing chromosome chr6
+2024-08-06 23:01:09,711 - INFO - Processing chromosome chr7
+2024-08-06 23:01:09,712 - INFO - Processing chromosome chrX
+2024-08-06 23:01:09,712 - INFO - Processing chromosome chr8
+2024-08-06 23:01:09,713 - INFO - Processing chromosome chr9
+2024-08-06 23:01:09,713 - INFO - Processing chromosome chr11
+2024-08-06 23:01:09,713 - INFO - Processing chromosome chr10
+2024-08-06 23:01:09,713 - INFO - Processing chromosome chr12
+2024-08-06 23:01:09,714 - INFO - Processing chromosome chr13
+2024-08-06 23:01:09,714 - INFO - Processing chromosome chr14
+2024-08-06 23:01:09,714 - INFO - Processing chromosome chr15
+2024-08-06 23:01:12,078 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr13
+2024-08-06 23:01:13,095 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr14
+2024-08-06 23:01:13,530 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr4
+2024-08-06 23:01:13,825 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrX
+2024-08-06 23:01:13,830 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr15
+2024-08-06 23:01:14,637 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr10
+2024-08-06 23:01:14,889 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr7
+2024-08-06 23:01:15,148 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr9
+2024-08-06 23:01:15,440 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr8
+2024-08-06 23:01:16,084 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr5
+2024-08-06 23:01:16,839 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr6
+2024-08-06 23:01:17,722 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr3
+2024-08-06 23:01:17,803 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr11
+2024-08-06 23:01:17,843 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr2
+2024-08-06 23:01:18,753 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr12
+2024-08-06 23:01:21,496 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr1
+2024-08-06 23:01:50,496 - INFO - Finished processing chromosome chr13
+2024-08-06 23:01:50,644 - INFO - Processing chromosome chr16
+2024-08-06 23:01:55,619 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr16
+2024-08-06 23:02:12,388 - INFO - Finished processing chromosome chr14
+2024-08-06 23:02:12,555 - INFO - Processing chromosome chr17
+2024-08-06 23:02:19,740 - INFO - Finished processing chromosome chrX
+2024-08-06 23:02:20,005 - INFO - Processing chromosome chr18
+2024-08-06 23:02:20,628 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr17
+2024-08-06 23:02:20,640 - INFO - Finished processing chromosome chr4
+2024-08-06 23:02:20,827 - INFO - Processing chromosome chr20
+2024-08-06 23:02:21,735 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr18
+2024-08-06 23:02:23,815 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr20
+2024-08-06 23:02:24,314 - INFO - Finished processing chromosome chr15
+2024-08-06 23:02:24,504 - INFO - Processing chromosome chr19
+2024-08-06 23:02:33,327 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr19
+2024-08-06 23:02:37,031 - INFO - Finished processing chromosome chr10
+2024-08-06 23:02:37,300 - INFO - Processing chromosome chrY
+2024-08-06 23:02:37,753 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrY
+2024-08-06 23:02:39,416 - INFO - Finished processing chromosome chr9
+2024-08-06 23:02:39,697 - INFO - Processing chromosome chr22
+2024-08-06 23:02:40,508 - INFO - Finished processing chromosome chrY
+2024-08-06 23:02:40,534 - INFO - Processing chromosome chr21
+2024-08-06 23:02:41,633 - INFO - Finished processing chromosome chr7
+2024-08-06 23:02:41,731 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr21
+2024-08-06 23:02:42,005 - INFO - Processing chromosome KI270728.1
+2024-08-06 23:02:42,358 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270728.1
+2024-08-06 23:02:42,371 - INFO - Finished processing chromosome KI270728.1
+2024-08-06 23:02:42,379 - INFO - Processing chromosome KI270727.1
+2024-08-06 23:02:42,464 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chr22
+2024-08-06 23:02:42,707 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270727.1
+2024-08-06 23:02:42,718 - INFO - Finished processing chromosome KI270727.1
+2024-08-06 23:02:42,729 - INFO - Processing chromosome KI270442.1
+2024-08-06 23:02:43,041 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270442.1
+2024-08-06 23:02:43,050 - INFO - Finished processing chromosome KI270442.1
+2024-08-06 23:02:43,058 - INFO - Processing chromosome KI270729.1
+2024-08-06 23:02:43,363 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270729.1
+2024-08-06 23:02:43,372 - INFO - Finished processing chromosome KI270729.1
+2024-08-06 23:02:43,379 - INFO - Processing chromosome GL000225.1
+2024-08-06 23:02:43,689 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000225.1
+2024-08-06 23:02:43,698 - INFO - Finished processing chromosome GL000225.1
+2024-08-06 23:02:43,705 - INFO - Processing chromosome KI270743.1
+2024-08-06 23:02:44,024 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270743.1
+2024-08-06 23:02:44,035 - INFO - Finished processing chromosome KI270743.1
+2024-08-06 23:02:44,042 - INFO - Processing chromosome GL000008.2
+2024-08-06 23:02:44,348 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000008.2
+2024-08-06 23:02:44,375 - INFO - Finished processing chromosome GL000008.2
+2024-08-06 23:02:44,385 - INFO - Processing chromosome GL000009.2
+2024-08-06 23:02:44,691 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000009.2
+2024-08-06 23:02:44,700 - INFO - Finished processing chromosome GL000009.2
+2024-08-06 23:02:44,708 - INFO - Processing chromosome KI270747.1
+2024-08-06 23:02:45,014 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270747.1
+2024-08-06 23:02:45,024 - INFO - Finished processing chromosome KI270747.1
+2024-08-06 23:02:45,031 - INFO - Processing chromosome KI270722.1
+2024-08-06 23:02:45,347 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270722.1
+2024-08-06 23:02:45,356 - INFO - Finished processing chromosome KI270722.1
+2024-08-06 23:02:45,364 - INFO - Processing chromosome GL000194.1
+2024-08-06 23:02:45,685 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000194.1
+2024-08-06 23:02:45,700 - INFO - Finished processing chromosome GL000194.1
+2024-08-06 23:02:45,712 - INFO - Processing chromosome KI270742.1
+2024-08-06 23:02:46,022 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270742.1
+2024-08-06 23:02:46,046 - INFO - Finished processing chromosome KI270742.1
+2024-08-06 23:02:46,054 - INFO - Processing chromosome GL000205.2
+2024-08-06 23:02:46,390 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000205.2
+2024-08-06 23:02:46,413 - INFO - Finished processing chromosome GL000205.2
+2024-08-06 23:02:46,421 - INFO - Processing chromosome GL000195.1
+2024-08-06 23:02:46,759 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000195.1
+2024-08-06 23:02:46,788 - INFO - Finished processing chromosome GL000195.1
+2024-08-06 23:02:46,807 - INFO - Processing chromosome KI270736.1
+2024-08-06 23:02:47,113 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270736.1
+2024-08-06 23:02:47,122 - INFO - Finished processing chromosome KI270736.1
+2024-08-06 23:02:47,129 - INFO - Processing chromosome KI270733.1
+2024-08-06 23:02:47,424 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270733.1
+2024-08-06 23:02:47,435 - INFO - Finished processing chromosome KI270733.1
+2024-08-06 23:02:47,442 - INFO - Processing chromosome GL000224.1
+2024-08-06 23:02:47,737 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000224.1
+2024-08-06 23:02:47,746 - INFO - Finished processing chromosome GL000224.1
+2024-08-06 23:02:47,753 - INFO - Processing chromosome GL000219.1
+2024-08-06 23:02:48,054 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000219.1
+2024-08-06 23:02:48,079 - INFO - Finished processing chromosome GL000219.1
+2024-08-06 23:02:48,087 - INFO - Processing chromosome KI270719.1
+2024-08-06 23:02:48,382 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270719.1
+2024-08-06 23:02:48,392 - INFO - Finished processing chromosome KI270719.1
+2024-08-06 23:02:48,398 - INFO - Processing chromosome GL000216.2
+2024-08-06 23:02:48,693 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000216.2
+2024-08-06 23:02:48,702 - INFO - Finished processing chromosome GL000216.2
+2024-08-06 23:02:48,708 - INFO - Processing chromosome KI270712.1
+2024-08-06 23:02:49,007 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270712.1
+2024-08-06 23:02:49,017 - INFO - Finished processing chromosome KI270712.1
+2024-08-06 23:02:49,025 - INFO - Processing chromosome KI270706.1
+2024-08-06 23:02:49,025 - INFO - Finished processing chromosome chr8
+2024-08-06 23:02:49,352 - INFO - Finished processing chromosome chr18
+2024-08-06 23:02:49,379 - INFO - Processing chromosome KI270725.1
+2024-08-06 23:02:49,379 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270706.1
+2024-08-06 23:02:49,397 - INFO - Finished processing chromosome KI270706.1
+2024-08-06 23:02:49,406 - INFO - Processing chromosome KI270744.1
+2024-08-06 23:02:49,453 - INFO - Processing chromosome KI270734.1
+2024-08-06 23:02:49,724 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270725.1
+2024-08-06 23:02:49,734 - INFO - Finished processing chromosome KI270725.1
+2024-08-06 23:02:49,741 - INFO - Processing chromosome GL000213.1
+2024-08-06 23:02:49,748 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270744.1
+2024-08-06 23:02:49,757 - INFO - Finished processing chromosome KI270744.1
+2024-08-06 23:02:49,764 - INFO - Processing chromosome GL000220.1
+2024-08-06 23:02:49,787 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270734.1
+2024-08-06 23:02:49,814 - INFO - Finished processing chromosome KI270734.1
+2024-08-06 23:02:49,828 - INFO - Processing chromosome KI270715.1
+2024-08-06 23:02:50,063 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000213.1
+2024-08-06 23:02:50,072 - INFO - Finished processing chromosome GL000213.1
+2024-08-06 23:02:50,074 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000220.1
+2024-08-06 23:02:50,079 - INFO - Processing chromosome GL000218.1
+2024-08-06 23:02:50,083 - INFO - Finished processing chromosome GL000220.1
+2024-08-06 23:02:50,092 - INFO - Processing chromosome KI270749.1
+2024-08-06 23:02:50,142 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270715.1
+2024-08-06 23:02:50,151 - INFO - Finished processing chromosome KI270715.1
+2024-08-06 23:02:50,158 - INFO - Processing chromosome KI270741.1
+2024-08-06 23:02:50,388 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000218.1
+2024-08-06 23:02:50,395 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270749.1
+2024-08-06 23:02:50,402 - INFO - Finished processing chromosome GL000218.1
+2024-08-06 23:02:50,405 - INFO - Finished processing chromosome KI270749.1
+2024-08-06 23:02:50,418 - INFO - Processing chromosome GL000221.1
+2024-08-06 23:02:50,418 - INFO - Processing chromosome KI270716.1
+2024-08-06 23:02:50,477 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270741.1
+2024-08-06 23:02:50,487 - INFO - Finished processing chromosome KI270741.1
+2024-08-06 23:02:50,493 - INFO - Processing chromosome KI270731.1
+2024-08-06 23:02:50,731 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270716.1
+2024-08-06 23:02:50,734 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000221.1
+2024-08-06 23:02:50,741 - INFO - Finished processing chromosome KI270716.1
+2024-08-06 23:02:50,745 - INFO - Finished processing chromosome GL000221.1
+2024-08-06 23:02:50,747 - INFO - Processing chromosome KI270751.1
+2024-08-06 23:02:50,753 - INFO - Processing chromosome KI270750.1
+2024-08-06 23:02:50,787 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270731.1
+2024-08-06 23:02:50,796 - INFO - Finished processing chromosome KI270731.1
+2024-08-06 23:02:50,803 - INFO - Processing chromosome KI270519.1
+2024-08-06 23:02:51,052 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270751.1
+2024-08-06 23:02:51,060 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270750.1
+2024-08-06 23:02:51,063 - INFO - Finished processing chromosome KI270751.1
+2024-08-06 23:02:51,069 - INFO - Processing chromosome GL000214.1
+2024-08-06 23:02:51,078 - INFO - Finished processing chromosome KI270750.1
+2024-08-06 23:02:51,093 - INFO - Processing chromosome KI270708.1
+2024-08-06 23:02:51,102 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270519.1
+2024-08-06 23:02:51,111 - INFO - Finished processing chromosome KI270519.1
+2024-08-06 23:02:51,118 - INFO - Processing chromosome KI270730.1
+2024-08-06 23:02:51,386 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000214.1
+2024-08-06 23:02:51,398 - INFO - Finished processing chromosome GL000214.1
+2024-08-06 23:02:51,405 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270708.1
+2024-08-06 23:02:51,405 - INFO - Processing chromosome KI270438.1
+2024-08-06 23:02:51,413 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270730.1
+2024-08-06 23:02:51,415 - INFO - Finished processing chromosome KI270708.1
+2024-08-06 23:02:51,422 - INFO - Processing chromosome KI270737.1
+2024-08-06 23:02:51,423 - INFO - Finished processing chromosome KI270730.1
+2024-08-06 23:02:51,430 - INFO - Processing chromosome KI270721.1
+2024-08-06 23:02:51,714 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270438.1
+2024-08-06 23:02:51,723 - INFO - Finished processing chromosome KI270438.1
+2024-08-06 23:02:51,730 - INFO - Processing chromosome KI270738.1
+2024-08-06 23:02:51,731 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270721.1
+2024-08-06 23:02:51,735 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270737.1
+2024-08-06 23:02:51,741 - INFO - Finished processing chromosome KI270721.1
+2024-08-06 23:02:51,744 - INFO - Finished processing chromosome KI270737.1
+2024-08-06 23:02:51,747 - INFO - Processing chromosome KI270748.1
+2024-08-06 23:02:51,750 - INFO - Processing chromosome KI270435.1
+2024-08-06 23:02:52,036 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270738.1
+2024-08-06 23:02:52,045 - INFO - Finished processing chromosome KI270738.1
+2024-08-06 23:02:52,051 - INFO - Processing chromosome GL000208.1
+2024-08-06 23:02:52,054 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270748.1
+2024-08-06 23:02:52,064 - INFO - Finished processing chromosome KI270748.1
+2024-08-06 23:02:52,063 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270435.1
+2024-08-06 23:02:52,070 - INFO - Processing chromosome KI270538.1
+2024-08-06 23:02:52,075 - INFO - Finished processing chromosome KI270435.1
+2024-08-06 23:02:52,085 - INFO - Processing chromosome KI270756.1
+2024-08-06 23:02:52,351 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000208.1
+2024-08-06 23:02:52,360 - INFO - Finished processing chromosome GL000208.1
+2024-08-06 23:02:52,366 - INFO - Processing chromosome KI270739.1
+2024-08-06 23:02:52,367 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270538.1
+2024-08-06 23:02:52,376 - INFO - Finished processing chromosome KI270538.1
+2024-08-06 23:02:52,382 - INFO - Processing chromosome KI270757.1
+2024-08-06 23:02:52,386 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270756.1
+2024-08-06 23:02:52,394 - INFO - Finished processing chromosome KI270756.1
+2024-08-06 23:02:52,401 - INFO - Processing chromosome KI270709.1
+2024-08-06 23:02:52,661 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270739.1
+2024-08-06 23:02:52,672 - INFO - Finished processing chromosome KI270739.1
+2024-08-06 23:02:52,679 - INFO - Processing chromosome KI270746.1
+2024-08-06 23:02:52,680 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270757.1
+2024-08-06 23:02:52,690 - INFO - Finished processing chromosome KI270757.1
+2024-08-06 23:02:52,696 - INFO - Processing chromosome KI270753.1
+2024-08-06 23:02:52,711 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270709.1
+2024-08-06 23:02:52,720 - INFO - Finished processing chromosome KI270709.1
+2024-08-06 23:02:52,727 - INFO - Processing chromosome KI270589.1
+2024-08-06 23:02:52,992 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270746.1
+2024-08-06 23:02:53,004 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270753.1
+2024-08-06 23:02:53,006 - INFO - Finished processing chromosome KI270746.1
+2024-08-06 23:02:53,012 - INFO - Finished processing chromosome KI270753.1
+2024-08-06 23:02:53,015 - INFO - Processing chromosome KI270726.1
+2024-08-06 23:02:53,019 - INFO - Processing chromosome KI270735.1
+2024-08-06 23:02:53,039 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270589.1
+2024-08-06 23:02:53,048 - INFO - Finished processing chromosome KI270589.1
+2024-08-06 23:02:53,054 - INFO - Processing chromosome KI270711.1
+2024-08-06 23:02:53,311 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270726.1
+2024-08-06 23:02:53,317 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270735.1
+2024-08-06 23:02:53,321 - INFO - Finished processing chromosome KI270726.1
+2024-08-06 23:02:53,326 - INFO - Finished processing chromosome KI270735.1
+2024-08-06 23:02:53,327 - INFO - Processing chromosome KI270745.1
+2024-08-06 23:02:53,333 - INFO - Processing chromosome KI270714.1
+2024-08-06 23:02:53,355 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270711.1
+2024-08-06 23:02:53,370 - INFO - Finished processing chromosome KI270711.1
+2024-08-06 23:02:53,376 - INFO - Processing chromosome KI270732.1
+2024-08-06 23:02:53,642 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270714.1
+2024-08-06 23:02:53,647 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270745.1
+2024-08-06 23:02:53,653 - INFO - Finished processing chromosome KI270714.1
+2024-08-06 23:02:53,658 - INFO - Finished processing chromosome KI270745.1
+2024-08-06 23:02:53,660 - INFO - Processing chromosome KI270713.1
+2024-08-06 23:02:53,665 - INFO - Processing chromosome KI270754.1
+2024-08-06 23:02:53,685 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270732.1
+2024-08-06 23:02:53,694 - INFO - Finished processing chromosome KI270732.1
+2024-08-06 23:02:53,700 - INFO - Processing chromosome KI270710.1
+2024-08-06 23:02:53,987 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270713.1
+2024-08-06 23:02:53,994 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270754.1
+2024-08-06 23:02:54,003 - INFO - Finished processing chromosome KI270713.1
+2024-08-06 23:02:54,007 - INFO - Finished processing chromosome KI270754.1
+2024-08-06 23:02:54,010 - INFO - Processing chromosome KI270717.1
+2024-08-06 23:02:54,016 - INFO - Processing chromosome KI270724.1
+2024-08-06 23:02:54,020 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270710.1
+2024-08-06 23:02:54,029 - INFO - Finished processing chromosome KI270710.1
+2024-08-06 23:02:54,036 - INFO - Processing chromosome KI270720.1
+2024-08-06 23:02:54,304 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270717.1
+2024-08-06 23:02:54,315 - INFO - Finished processing chromosome KI270717.1
+2024-08-06 23:02:54,316 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270724.1
+2024-08-06 23:02:54,322 - INFO - Processing chromosome KI270723.1
+2024-08-06 23:02:54,325 - INFO - Finished processing chromosome KI270724.1
+2024-08-06 23:02:54,332 - INFO - Processing chromosome KI270718.1
+2024-08-06 23:02:54,339 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270720.1
+2024-08-06 23:02:54,348 - INFO - Finished processing chromosome KI270720.1
+2024-08-06 23:02:54,354 - INFO - Processing chromosome KI270317.1
+2024-08-06 23:02:54,638 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270723.1
+2024-08-06 23:02:54,646 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270718.1
+2024-08-06 23:02:54,648 - INFO - Finished processing chromosome KI270723.1
+2024-08-06 23:02:54,654 - INFO - Processing chromosome KI270740.1
+2024-08-06 23:02:54,654 - INFO - Finished processing chromosome KI270718.1
+2024-08-06 23:02:54,661 - INFO - Processing chromosome KI270755.1
+2024-08-06 23:02:54,662 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270317.1
+2024-08-06 23:02:54,671 - INFO - Finished processing chromosome KI270317.1
+2024-08-06 23:02:54,678 - INFO - Processing chromosome KI270707.1
+2024-08-06 23:02:54,951 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270740.1
+2024-08-06 23:02:54,961 - INFO - Finished processing chromosome KI270740.1
+2024-08-06 23:02:54,970 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270755.1
+2024-08-06 23:02:54,974 - INFO - Processing chromosome KI270579.1
+2024-08-06 23:02:54,979 - INFO - Finished processing chromosome KI270755.1
+2024-08-06 23:02:54,985 - INFO - Processing chromosome KI270752.1
+2024-08-06 23:02:54,986 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270707.1
+2024-08-06 23:02:54,995 - INFO - Finished processing chromosome KI270707.1
+2024-08-06 23:02:55,002 - INFO - Processing chromosome KI270512.1
+2024-08-06 23:02:55,267 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270579.1
+2024-08-06 23:02:55,276 - INFO - Finished processing chromosome KI270579.1
+2024-08-06 23:02:55,283 - INFO - Processing chromosome KI270322.1
+2024-08-06 23:02:55,284 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270752.1
+2024-08-06 23:02:55,293 - INFO - Finished processing chromosome KI270752.1
+2024-08-06 23:02:55,299 - INFO - Processing chromosome chrM
+2024-08-06 23:02:55,300 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270512.1
+2024-08-06 23:02:55,308 - INFO - Finished processing chromosome KI270512.1
+2024-08-06 23:02:55,315 - INFO - Processing chromosome GL000226.1
+2024-08-06 23:02:55,825 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270322.1
+2024-08-06 23:02:55,835 - INFO - Finished processing chromosome KI270322.1
+2024-08-06 23:02:55,835 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_GL000226.1
+2024-08-06 23:02:55,841 - INFO - Processing chromosome KI270311.1
+2024-08-06 23:02:55,850 - INFO - Finished processing chromosome GL000226.1
+2024-08-06 23:02:55,857 - INFO - Processing chromosome KI270366.1
+2024-08-06 23:02:56,211 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270311.1
+2024-08-06 23:02:56,221 - INFO - Finished processing chromosome KI270311.1
+2024-08-06 23:02:56,229 - INFO - Processing chromosome KI270511.1
+2024-08-06 23:02:56,263 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270366.1
+2024-08-06 23:02:56,277 - INFO - Finished processing chromosome KI270366.1
+2024-08-06 23:02:56,287 - INFO - Processing chromosome KI270448.1
+2024-08-06 23:02:56,743 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270511.1
+2024-08-06 23:02:56,753 - INFO - Finished processing chromosome KI270511.1
+2024-08-06 23:02:56,769 - INFO - Processing chromosome KI270521.1
+2024-08-06 23:02:56,781 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270448.1
+2024-08-06 23:02:56,791 - INFO - Finished processing chromosome KI270448.1
+2024-08-06 23:02:56,809 - INFO - Processing chromosome KI270581.1
+2024-08-06 23:02:57,240 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270521.1
+2024-08-06 23:02:57,250 - INFO - Finished processing chromosome KI270521.1
+2024-08-06 23:02:57,257 - INFO - Processing chromosome KI270582.1
+2024-08-06 23:02:57,285 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270581.1
+2024-08-06 23:02:57,302 - INFO - Finished processing chromosome KI270581.1
+2024-08-06 23:02:57,342 - INFO - Processing chromosome KI270515.1
+2024-08-06 23:02:57,754 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270582.1
+2024-08-06 23:02:57,763 - INFO - Finished processing chromosome KI270582.1
+2024-08-06 23:02:57,770 - INFO - Processing chromosome KI270588.1
+2024-08-06 23:02:57,806 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270515.1
+2024-08-06 23:02:57,826 - INFO - Finished processing chromosome KI270515.1
+2024-08-06 23:02:57,833 - INFO - Processing chromosome KI270591.1
+2024-08-06 23:02:58,156 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270591.1
+2024-08-06 23:02:58,157 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270588.1
+2024-08-06 23:02:58,172 - INFO - Finished processing chromosome KI270591.1
+2024-08-06 23:02:58,173 - INFO - Finished processing chromosome KI270588.1
+2024-08-06 23:02:58,183 - INFO - Processing chromosome KI270522.1
+2024-08-06 23:02:58,183 - INFO - Processing chromosome KI270507.1
+2024-08-06 23:02:58,574 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270507.1
+2024-08-06 23:02:58,584 - INFO - Finished processing chromosome KI270507.1
+2024-08-06 23:02:58,584 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270522.1
+2024-08-06 23:02:58,595 - INFO - Finished processing chromosome KI270522.1
+2024-08-06 23:02:58,601 - INFO - Processing chromosome KI270590.1
+2024-08-06 23:02:58,610 - INFO - Processing chromosome KI270584.1
+2024-08-06 23:02:58,726 - INFO - Finished processing chromosome chr5
+2024-08-06 23:02:58,914 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270584.1
+2024-08-06 23:02:58,922 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270590.1
+2024-08-06 23:02:58,924 - INFO - Finished processing chromosome KI270584.1
+2024-08-06 23:02:58,931 - INFO - Finished processing chromosome KI270590.1
+2024-08-06 23:02:58,939 - INFO - Processing chromosome KI270320.1
+2024-08-06 23:02:58,943 - INFO - Processing chromosome KI270382.1
+2024-08-06 23:02:59,019 - INFO - Processing chromosome KI270468.1
+2024-08-06 23:02:59,268 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270320.1
+2024-08-06 23:02:59,282 - INFO - Finished processing chromosome KI270320.1
+2024-08-06 23:02:59,286 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270382.1
+2024-08-06 23:02:59,289 - INFO - Processing chromosome KI270467.1
+2024-08-06 23:02:59,295 - INFO - Finished processing chromosome KI270382.1
+2024-08-06 23:02:59,303 - INFO - Processing chromosome KI270362.1
+2024-08-06 23:02:59,357 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_chrM
+2024-08-06 23:02:59,380 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270468.1
+2024-08-06 23:02:59,390 - INFO - Finished processing chromosome KI270468.1
+2024-08-06 23:02:59,397 - INFO - Processing chromosome KI270517.1
+2024-08-06 23:02:59,635 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270467.1
+2024-08-06 23:02:59,645 - INFO - Finished processing chromosome KI270467.1
+2024-08-06 23:02:59,651 - INFO - Processing chromosome KI270593.1
+2024-08-06 23:02:59,660 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270362.1
+2024-08-06 23:02:59,669 - INFO - Finished processing chromosome KI270362.1
+2024-08-06 23:02:59,676 - INFO - Processing chromosome KI270528.1
+2024-08-06 23:02:59,723 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270517.1
+2024-08-06 23:02:59,732 - INFO - Finished processing chromosome KI270517.1
+2024-08-06 23:02:59,739 - INFO - Processing chromosome KI270587.1
+2024-08-06 23:02:59,959 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270593.1
+2024-08-06 23:02:59,968 - INFO - Finished processing chromosome KI270593.1
+2024-08-06 23:02:59,976 - INFO - Processing chromosome KI270364.1
+2024-08-06 23:02:59,999 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270528.1
+2024-08-06 23:03:00,008 - INFO - Finished processing chromosome KI270528.1
+2024-08-06 23:03:00,015 - INFO - Processing chromosome KI270371.1
+2024-08-06 23:03:00,045 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270587.1
+2024-08-06 23:03:00,054 - INFO - Finished processing chromosome KI270587.1
+2024-08-06 23:03:00,061 - INFO - Processing chromosome KI270333.1
+2024-08-06 23:03:00,291 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270364.1
+2024-08-06 23:03:00,300 - INFO - Finished processing chromosome KI270364.1
+2024-08-06 23:03:00,307 - INFO - Processing chromosome KI270374.1
+2024-08-06 23:03:00,325 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270371.1
+2024-08-06 23:03:00,334 - INFO - Finished processing chromosome KI270371.1
+2024-08-06 23:03:00,341 - INFO - Processing chromosome KI270411.1
+2024-08-06 23:03:00,366 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270333.1
+2024-08-06 23:03:00,375 - INFO - Finished processing chromosome KI270333.1
+2024-08-06 23:03:00,381 - INFO - Processing chromosome KI270414.1
+2024-08-06 23:03:00,608 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270374.1
+2024-08-06 23:03:00,618 - INFO - Finished processing chromosome KI270374.1
+2024-08-06 23:03:00,625 - INFO - Processing chromosome KI270510.1
+2024-08-06 23:03:00,660 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270411.1
+2024-08-06 23:03:00,669 - INFO - Finished processing chromosome KI270411.1
+2024-08-06 23:03:00,676 - INFO - Processing chromosome KI270390.1
+2024-08-06 23:03:00,702 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270414.1
+2024-08-06 23:03:00,711 - INFO - Finished processing chromosome KI270414.1
+2024-08-06 23:03:00,718 - INFO - Processing chromosome KI270375.1
+2024-08-06 23:03:00,933 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270510.1
+2024-08-06 23:03:00,942 - INFO - Finished processing chromosome KI270510.1
+2024-08-06 23:03:00,949 - INFO - Processing chromosome KI270420.1
+2024-08-06 23:03:00,995 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270390.1
+2024-08-06 23:03:01,005 - INFO - Finished processing chromosome KI270390.1
+2024-08-06 23:03:01,013 - INFO - Processing chromosome KI270509.1
+2024-08-06 23:03:01,034 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270375.1
+2024-08-06 23:03:01,043 - INFO - Finished processing chromosome KI270375.1
+2024-08-06 23:03:01,050 - INFO - Processing chromosome KI270315.1
+2024-08-06 23:03:01,257 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270420.1
+2024-08-06 23:03:01,266 - INFO - Finished processing chromosome KI270420.1
+2024-08-06 23:03:01,272 - INFO - Processing chromosome KI270302.1
+2024-08-06 23:03:01,320 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270509.1
+2024-08-06 23:03:01,337 - INFO - Finished processing chromosome KI270509.1
+2024-08-06 23:03:01,345 - INFO - Processing chromosome KI270518.1
+2024-08-06 23:03:01,381 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270315.1
+2024-08-06 23:03:01,399 - INFO - Finished processing chromosome KI270315.1
+2024-08-06 23:03:01,405 - INFO - Processing chromosome KI270530.1
+2024-08-06 23:03:01,602 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270302.1
+2024-08-06 23:03:01,611 - INFO - Finished processing chromosome KI270302.1
+2024-08-06 23:03:01,618 - INFO - Processing chromosome KI270304.1
+2024-08-06 23:03:01,676 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270518.1
+2024-08-06 23:03:01,686 - INFO - Finished processing chromosome KI270518.1
+2024-08-06 23:03:01,695 - INFO - Processing chromosome KI270418.1
+2024-08-06 23:03:01,732 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270530.1
+2024-08-06 23:03:01,742 - INFO - Finished processing chromosome KI270530.1
+2024-08-06 23:03:01,748 - INFO - Processing chromosome KI270424.1
+2024-08-06 23:03:01,902 - INFO - Finished processing chromosome chr21
+2024-08-06 23:03:01,925 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270304.1
+2024-08-06 23:03:01,934 - INFO - Finished processing chromosome KI270304.1
+2024-08-06 23:03:01,941 - INFO - Processing chromosome KI270417.1
+2024-08-06 23:03:01,984 - INFO - Processing chromosome KI270508.1
+2024-08-06 23:03:02,010 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270418.1
+2024-08-06 23:03:02,020 - INFO - Finished processing chromosome KI270418.1
+2024-08-06 23:03:02,028 - INFO - Processing chromosome KI270303.1
+2024-08-06 23:03:02,051 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270424.1
+2024-08-06 23:03:02,060 - INFO - Finished processing chromosome KI270424.1
+2024-08-06 23:03:02,067 - INFO - Processing chromosome KI270381.1
+2024-08-06 23:03:02,261 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270417.1
+2024-08-06 23:03:02,270 - INFO - Finished processing chromosome KI270417.1
+2024-08-06 23:03:02,276 - INFO - Processing chromosome KI270529.1
+2024-08-06 23:03:02,307 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270508.1
+2024-08-06 23:03:02,322 - INFO - Finished processing chromosome KI270508.1
+2024-08-06 23:03:02,330 - INFO - Processing chromosome KI270425.1
+2024-08-06 23:03:02,342 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270303.1
+2024-08-06 23:03:02,351 - INFO - Finished processing chromosome KI270303.1
+2024-08-06 23:03:02,358 - INFO - Processing chromosome KI270396.1
+2024-08-06 23:03:02,391 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270381.1
+2024-08-06 23:03:02,399 - INFO - Finished processing chromosome KI270381.1
+2024-08-06 23:03:02,406 - INFO - Processing chromosome KI270363.1
+2024-08-06 23:03:02,591 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270529.1
+2024-08-06 23:03:02,601 - INFO - Finished processing chromosome KI270529.1
+2024-08-06 23:03:02,608 - INFO - Processing chromosome KI270386.1
+2024-08-06 23:03:02,655 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270425.1
+2024-08-06 23:03:02,663 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270396.1
+2024-08-06 23:03:02,666 - INFO - Finished processing chromosome KI270425.1
+2024-08-06 23:03:02,676 - INFO - Processing chromosome KI270465.1
+2024-08-06 23:03:02,679 - INFO - Finished processing chromosome KI270396.1
+2024-08-06 23:03:02,686 - INFO - Processing chromosome KI270383.1
+2024-08-06 23:03:02,723 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270363.1
+2024-08-06 23:03:02,744 - INFO - Finished processing chromosome KI270363.1
+2024-08-06 23:03:02,750 - INFO - Processing chromosome KI270384.1
+2024-08-06 23:03:02,917 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270386.1
+2024-08-06 23:03:02,927 - INFO - Finished processing chromosome KI270386.1
+2024-08-06 23:03:02,935 - INFO - Processing chromosome KI270330.1
+2024-08-06 23:03:02,982 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270383.1
+2024-08-06 23:03:02,985 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270465.1
+2024-08-06 23:03:02,991 - INFO - Finished processing chromosome KI270383.1
+2024-08-06 23:03:02,994 - INFO - Finished processing chromosome KI270465.1
+2024-08-06 23:03:02,998 - INFO - Processing chromosome KI270372.1
+2024-08-06 23:03:03,001 - INFO - Processing chromosome KI270548.1
+2024-08-06 23:03:03,070 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270384.1
+2024-08-06 23:03:03,079 - INFO - Finished processing chromosome KI270384.1
+2024-08-06 23:03:03,088 - INFO - Processing chromosome KI270580.1
+2024-08-06 23:03:03,238 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270330.1
+2024-08-06 23:03:03,247 - INFO - Finished processing chromosome KI270330.1
+2024-08-06 23:03:03,253 - INFO - Processing chromosome KI270387.1
+2024-08-06 23:03:03,298 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270372.1
+2024-08-06 23:03:03,308 - INFO - Finished processing chromosome KI270372.1
+2024-08-06 23:03:03,309 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270548.1
+2024-08-06 23:03:03,314 - INFO - Processing chromosome KI270391.1
+2024-08-06 23:03:03,322 - INFO - Finished processing chromosome KI270548.1
+2024-08-06 23:03:03,329 - INFO - Processing chromosome KI270305.1
+2024-08-06 23:03:03,403 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270580.1
+2024-08-06 23:03:03,413 - INFO - Finished processing chromosome KI270580.1
+2024-08-06 23:03:03,419 - INFO - Processing chromosome KI270373.1
+2024-08-06 23:03:03,562 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270387.1
+2024-08-06 23:03:03,571 - INFO - Finished processing chromosome KI270387.1
+2024-08-06 23:03:03,577 - INFO - Processing chromosome KI270422.1
+2024-08-06 23:03:03,626 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270391.1
+2024-08-06 23:03:03,635 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270305.1
+2024-08-06 23:03:03,636 - INFO - Finished processing chromosome KI270391.1
+2024-08-06 23:03:03,644 - INFO - Processing chromosome KI270316.1
+2024-08-06 23:03:03,655 - INFO - Finished processing chromosome KI270305.1
+2024-08-06 23:03:03,663 - INFO - Processing chromosome KI270338.1
+2024-08-06 23:03:03,733 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270373.1
+2024-08-06 23:03:03,741 - INFO - Finished processing chromosome KI270373.1
+2024-08-06 23:03:03,748 - INFO - Processing chromosome KI270340.1
+2024-08-06 23:03:03,889 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270422.1
+2024-08-06 23:03:03,898 - INFO - Finished processing chromosome KI270422.1
+2024-08-06 23:03:03,904 - INFO - Processing chromosome KI270583.1
+2024-08-06 23:03:03,985 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270316.1
+2024-08-06 23:03:03,995 - INFO - Finished processing chromosome KI270316.1
+2024-08-06 23:03:04,002 - INFO - Processing chromosome KI270334.1
+2024-08-06 23:03:04,006 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270338.1
+2024-08-06 23:03:04,015 - INFO - Finished processing chromosome KI270338.1
+2024-08-06 23:03:04,021 - INFO - Processing chromosome KI270429.1
+2024-08-06 23:03:04,096 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270340.1
+2024-08-06 23:03:04,105 - INFO - Finished processing chromosome KI270340.1
+2024-08-06 23:03:04,113 - INFO - Processing chromosome KI270393.1
+2024-08-06 23:03:04,245 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270583.1
+2024-08-06 23:03:04,254 - INFO - Finished processing chromosome KI270583.1
+2024-08-06 23:03:04,261 - INFO - Processing chromosome KI270516.1
+2024-08-06 23:03:04,301 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270334.1
+2024-08-06 23:03:04,310 - INFO - Finished processing chromosome KI270334.1
+2024-08-06 23:03:04,316 - INFO - Processing chromosome KI270389.1
+2024-08-06 23:03:04,340 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270429.1
+2024-08-06 23:03:04,353 - INFO - Finished processing chromosome KI270429.1
+2024-08-06 23:03:04,361 - INFO - Processing chromosome KI270466.1
+2024-08-06 23:03:04,423 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270393.1
+2024-08-06 23:03:04,432 - INFO - Finished processing chromosome KI270393.1
+2024-08-06 23:03:04,439 - INFO - Processing chromosome KI270388.1
+2024-08-06 23:03:04,572 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270516.1
+2024-08-06 23:03:04,581 - INFO - Finished processing chromosome KI270516.1
+2024-08-06 23:03:04,587 - INFO - Processing chromosome KI270544.1
+2024-08-06 23:03:04,627 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270389.1
+2024-08-06 23:03:04,644 - INFO - Finished processing chromosome KI270389.1
+2024-08-06 23:03:04,651 - INFO - Processing chromosome KI270310.1
+2024-08-06 23:03:04,691 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270466.1
+2024-08-06 23:03:04,701 - INFO - Finished processing chromosome KI270466.1
+2024-08-06 23:03:04,709 - INFO - Processing chromosome KI270412.1
+2024-08-06 23:03:04,769 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270388.1
+2024-08-06 23:03:04,778 - INFO - Finished processing chromosome KI270388.1
+2024-08-06 23:03:04,784 - INFO - Processing chromosome KI270395.1
+2024-08-06 23:03:04,916 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270544.1
+2024-08-06 23:03:04,925 - INFO - Finished processing chromosome KI270544.1
+2024-08-06 23:03:04,932 - INFO - Processing chromosome KI270376.1
+2024-08-06 23:03:04,981 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270310.1
+2024-08-06 23:03:04,990 - INFO - Finished processing chromosome KI270310.1
+2024-08-06 23:03:05,007 - INFO - Processing chromosome KI270337.1
+2024-08-06 23:03:05,050 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270412.1
+2024-08-06 23:03:05,060 - INFO - Finished processing chromosome KI270412.1
+2024-08-06 23:03:05,066 - INFO - Processing chromosome KI270335.1
+2024-08-06 23:03:05,101 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270395.1
+2024-08-06 23:03:05,110 - INFO - Finished processing chromosome KI270395.1
+2024-08-06 23:03:05,117 - INFO - Processing chromosome KI270378.1
+2024-08-06 23:03:05,251 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270376.1
+2024-08-06 23:03:05,260 - INFO - Finished processing chromosome KI270376.1
+2024-08-06 23:03:05,267 - INFO - Processing chromosome KI270379.1
+2024-08-06 23:03:05,327 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270337.1
+2024-08-06 23:03:05,337 - INFO - Finished processing chromosome KI270337.1
+2024-08-06 23:03:05,344 - INFO - Processing chromosome KI270329.1
+2024-08-06 23:03:05,387 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270335.1
+2024-08-06 23:03:05,396 - INFO - Finished processing chromosome KI270335.1
+2024-08-06 23:03:05,404 - INFO - Processing chromosome KI270419.1
+2024-08-06 23:03:05,442 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270378.1
+2024-08-06 23:03:05,451 - INFO - Finished processing chromosome KI270378.1
+2024-08-06 23:03:05,462 - INFO - Processing chromosome KI270336.1
+2024-08-06 23:03:05,588 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270379.1
+2024-08-06 23:03:05,597 - INFO - Finished processing chromosome KI270379.1
+2024-08-06 23:03:05,604 - INFO - Processing chromosome KI270312.1
+2024-08-06 23:03:05,651 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270329.1
+2024-08-06 23:03:05,659 - INFO - Finished processing chromosome KI270329.1
+2024-08-06 23:03:05,666 - INFO - Processing chromosome KI270539.1
+2024-08-06 23:03:05,721 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270419.1
+2024-08-06 23:03:05,730 - INFO - Finished processing chromosome KI270419.1
+2024-08-06 23:03:05,737 - INFO - Processing chromosome KI270385.1
+2024-08-06 23:03:05,781 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270336.1
+2024-08-06 23:03:05,801 - INFO - Finished processing chromosome KI270336.1
+2024-08-06 23:03:05,808 - INFO - Processing chromosome KI270423.1
+2024-08-06 23:03:05,907 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270312.1
+2024-08-06 23:03:05,916 - INFO - Finished processing chromosome KI270312.1
+2024-08-06 23:03:05,922 - INFO - Processing chromosome KI270392.1
+2024-08-06 23:03:05,974 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270539.1
+2024-08-06 23:03:05,983 - INFO - Finished processing chromosome KI270539.1
+2024-08-06 23:03:05,990 - INFO - Processing chromosome KI270394.1
+2024-08-06 23:03:06,043 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270385.1
+2024-08-06 23:03:06,052 - INFO - Finished processing chromosome KI270385.1
+2024-08-06 23:03:06,118 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270423.1
+2024-08-06 23:03:06,127 - INFO - Finished processing chromosome KI270423.1
+2024-08-06 23:03:06,226 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270392.1
+2024-08-06 23:03:06,235 - INFO - Finished processing chromosome KI270392.1
+2024-08-06 23:03:06,305 - INFO - Loading read assignments from /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/aux/OUT.save_KI270394.1
+2024-08-06 23:03:06,313 - INFO - Finished processing chromosome KI270394.1
+2024-08-06 23:03:09,338 - INFO - Finished processing chromosome chr6
+2024-08-06 23:03:16,959 - INFO - Finished processing chromosome chr20
+2024-08-06 23:03:17,403 - INFO - Finished processing chromosome chr16
+2024-08-06 23:03:18,827 - INFO - Finished processing chromosome chr11
+2024-08-06 23:03:27,512 - INFO - Finished processing chromosome chr3
+2024-08-06 23:03:31,212 - INFO - Finished processing chromosome chr22
+2024-08-06 23:03:34,921 - INFO - Finished processing chromosome chrM
+2024-08-06 23:03:40,494 - INFO - Finished processing chromosome chr2
+2024-08-06 23:03:50,748 - INFO - Finished processing chromosome chr12
+2024-08-06 23:04:28,193 - INFO - Finished processing chromosome chr17
+2024-08-06 23:04:44,392 - INFO - Finished processing chromosome chr1
+2024-08-06 23:04:54,403 - INFO - Finished processing chromosome chr19
+2024-08-06 23:05:09,949 - INFO - Transcript model file /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/OUT.transcript_models.gtf
+2024-08-06 23:05:10,803 - INFO - Extended annotation is saved to /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/OUT.extended_annotation.gtf
+2024-08-06 23:05:10,803 - INFO - Transcript model statistics
+2024-08-06 23:05:10,804 - INFO - known: 17420
+2024-08-06 23:05:10,804 - INFO - novel_in_catalog: 1237
+2024-08-06 23:05:10,804 - INFO - novel_not_in_catalog: 2742
+2024-08-06 23:06:16,843 - INFO - Gene counts are stored in /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/OUT.gene_counts.tsv
+2024-08-06 23:06:16,844 - INFO - Transcript counts are stored in /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/OUT.transcript_counts.tsv
+2024-08-06 23:06:16,844 - INFO - Read assignments are stored in /mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/OUT/OUT.read_assignments.tsv.gz
+2024-08-06 23:06:16,844 - INFO - Read assignment statistics
+2024-08-06 23:06:16,845 - INFO - ambiguous: 664218
+2024-08-06 23:06:16,845 - INFO - inconsistent: 146297
+2024-08-06 23:06:16,845 - INFO - inconsistent_ambiguous: 61393
+2024-08-06 23:06:16,846 - INFO - inconsistent_non_intronic: 140203
+2024-08-06 23:06:16,846 - INFO - intergenic: 4884
+2024-08-06 23:06:16,846 - INFO - noninformative: 31126
+2024-08-06 23:06:16,847 - INFO - unique: 1937588
+2024-08-06 23:06:16,847 - INFO - unique_minor_difference: 241343
+2024-08-06 23:06:17,096 - INFO - Processed experiment OUT
+2024-08-06 23:06:17,097 - INFO - Processed 1 experiment
+2024-08-06 23:06:17,097 - INFO -  === IsoQuant pipeline finished === 
+
+Done
+Tue Aug  6 23:06:17 BST 2024
+

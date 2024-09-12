@@ -1,0 +1,7 @@
+barcode,sample_id,alias,condition
+barcode01,H9_2_4,H9_2_4,control
+barcode02,H9_3_4,H9_3_4,control
+barcode03,H9_4_4,H9_4_4,control
+barcode04,HEYA8_1_4,HEYA8_1_4,treated
+barcode05,HEYA8_2_4,HEYA8_2_4,treated
+barcode06,HEYA8_3_3,HEYA8_3_3,treated

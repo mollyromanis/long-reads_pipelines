@@ -1,0 +1,112 @@
+#!/bin/bash
+##
+## Run ISOQuant tools on the reference guided directRNA results
+## ------------------------------------------
+##
+#PBS -N log_s08
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q one_day
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Clear any loaded modules and set the module directory
+module purge
+module use /apps2/modules/all
+module list
+
+## Stop the script execution on runtime errors
+set -e
+
+## Activate isoquant conda environment 
+source /apps/software/Miniconda3/22.11.1-1/bin/activate isoquant
+
+## Locate working directory
+working_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/"
+cd "${working_folder}"
+
+## Set up folder pathways
+gencode="${working_folder}/gencode46/"
+output="/mnt/beegfs/home/s445216/thesis_project/ONP/results/isoquant_results/directRNA/"
+mkdir -p "${output}"
+
+ref_genome="${gencode}GRCh38.primary_assembly.genome.fa"
+ref_annotation="${gencode}gencode.v46.basic.annotation.gtf"
+
+## Setup Bam files
+bams_folder="${working_folder}/bam_files/"
+mkdir -p "${bams_folder}"
+
+source_folder="/mnt/beegfs/home/s445216/thesis_project/ONP/results/wf_trancriptomics_results/directRNA_ref-guided/output/"
+cp ${source_folder}/*.bam "${bams_folder}/"
+
+cd "${bams_folder}"
+bam_files=(${bams_folder}/*.bam)
+
+## Ensure the BAM files are present
+if [ ${#bam_files[@]} -eq 0 ]; then
+    echo "No BAM files found in ${bams_folder}. Exiting."
+    exit 1
+fi
+
+## Sort and index BAM files
+sorted_bam_files=()
+for bam in "${bam_files[@]}"; do
+    sorted_bam="${bam%.bam}_sorted.bam"
+    samtools sort -o "${sorted_bam}" "${bam}"
+    samtools index "${sorted_bam}"
+    sorted_bam_files+=("${sorted_bam}")
+done
+
+## Run IsoQuant
+echo "Running ISOQuant with the following BAM files:"
+for bam in "${sorted_bam_files[@]}"; do
+    echo "${bam}"
+done
+
+isoquant.py \
+--reference "${ref_genome}" \
+--genedb "${ref_annotation}" \
+--bam "${sorted_bam_files[@]}" \
+--data_type nanopore \
+--sqanti_output \
+-o "${output}"
+
+## Completion message
+echo ""
+echo "Done"
+date
+echo ""
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#

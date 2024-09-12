@@ -1,0 +1,24 @@
+Starting data download
+
+H9_2_1 downloading
+2024-07-12 12:34:20 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate2_run1/SGNex_H9_directRNA_replicate2_run1.fastq.gz [1033379921/1033379921] -> "SGNex_H9_directRNA_replicate2_run1.fastq.gz" [1]
+
+H9_3_1 downloading
+2024-07-12 12:36:32 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate3_run1/SGNex_H9_directRNA_replicate3_run1.fastq.gz [1004320972/1004320972] -> "SGNex_H9_directRNA_replicate3_run1.fastq.gz" [1]
+
+H9_4_1 downloading
+2024-07-12 12:39:46 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_H9_directRNA_replicate4_run1/SGNex_H9_directRNA_replicate4_run1.fastq.gz [1457620390/1457620390] -> "SGNex_H9_directRNA_replicate4_run1.fastq.gz" [1]
+
+HEYA8_1_1 downloading
+2024-07-12 14:27:06 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate1_run1/SGNex_HEYA8_directRNA_replicate1_run1.fastq.gz [1730757368/1730757368] -> "SGNex_HEYA8_directRNA_replicate1_run1.fastq.gz" [1]
+
+HEYA8_2_1 downloading
+2024-07-12 15:29:52 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate2_run1/SGNex_HEYA8_directRNA_replicate2_run1.fastq.gz [1570888196/1570888196] -> "SGNex_HEYA8_directRNA_replicate2_run1.fastq.gz" [1]
+
+HEYA8_3_3 downloading
+2024-07-12 15:51:33 URL:https://sg-nex-data.s3.ap-southeast-1.amazonaws.com/data/sequencing_data_ont/fastq/SGNex_HEYA8_directRNA_replicate3_run1/SGNex_HEYA8_directRNA_replicate3_run1.fastq.gz [2103601998/2103601998] -> "SGNex_HEYA8_directRNA_replicate3_run1.fastq.gz" [1]
+
+Completed cDNA data download script
+
+Fri Jul 12 15:51:33 BST 2024
+

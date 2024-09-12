@@ -1,0 +1,87 @@
+#!/bin/bash
+##
+## Running NanoComp on the filtered directRNA data set
+## ------------------------------------------
+##
+#PBS -N log_s06
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+##
+#PBS -q half_day
+##
+#PBS -m abe 
+#PBS -M molly.romanis.216@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+#PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+##
+## Clear any loaded modules and set the module directory
+module purge
+module use /apps/modules/all
+##
+## Stop the script execution on runtime errors
+set -e
+##
+## Activate nanopack_env environment
+source /apps/software/Miniconda3/22.11.1-1/bin/activate nanopack_env
+##
+## NanoComp version
+NanoComp --version
+echo ""
+##
+## Define the cDNA data directory and navigate to it
+directRNA="/mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/filtered_data/"
+##
+QC="/mnt/beegfs/home/s445216/thesis_project/ONP/results/QC_results/directRNA/filt/NanoComp/"
+mkdir -p "${QC}"
+##
+# Set source fastq files and corresponding samples names
+H9_2_1="${directRNA}SGNex_H9_directRNA_replicate2_run1_filt.fastq.gz"
+H9_3_1="${directRNA}SGNex_H9_directRNA_replicate3_run1_filt.fastq.gz"
+H9_4_1="${directRNA}SGNex_H9_directRNA_replicate4_run1_filt.fastq.gz"
+HEYA8_1_1="${directRNA}SGNex_HEYA8_directRNA_replicate1_run1_filt.fastq.gz"
+HEYA8_2_1="${directRNA}SGNex_HEYA8_directRNA_replicate2_run1_filt.fastq.gz"
+HEYA8_3_1="${directRNA}SGNex_HEYA8_directRNA_replicate3_run1_filt.fastq.gz"
+##
+# Run NanoComp
+echo "Comparing samples"
+echo ""
+NanoComp \
+--fastq "${H9_2_1}" "${H9_3_1}" "${H9_4_1}" "${HEYA8_1_1}" "${HEYA8_2_1}" "${HEYA8_3_1}" \
+--names H9_2_1 H9_3_1 H9_4_1 HEYA8_1_1 HEYA8_2_1 HEYA8_3_1 \
+--threads 12 \
+--outdir "${QC}"
+##
+echo ""
+echo "Done"
+echo ""
+date
+echo ""
+##
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#

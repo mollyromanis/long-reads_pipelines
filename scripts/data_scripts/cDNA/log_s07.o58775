@@ -1,0 +1,20 @@
+NanoComp 1.24.0
+
+Comparing samples
+
+AttributeError: 'int' object has no attribute 'log10'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/beegfs/home/s445216/.conda/envs/nanopack_env/bin/NanoComp", line 8, in <module>
+    sys.exit(main())
+  File "/mnt/beegfs/home/s445216/.conda/envs/nanopack_env/lib/python3.8/site-packages/nanocomp/NanoComp.py", line 84, in main
+    plots = make_plots(datadf, settings)
+  File "/mnt/beegfs/home/s445216/.conda/envs/nanopack_env/lib/python3.8/site-packages/nanocomp/NanoComp.py", line 94, in make_plots
+    df["log length"] = np.log10(df["lengths"])
+  File "/mnt/beegfs/home/s445216/.conda/envs/nanopack_env/lib/python3.8/site-packages/pandas/core/generic.py", line 2016, in __array_ufunc__
+    return arraylike.array_ufunc(self, ufunc, method, *inputs, **kwargs)
+  File "/mnt/beegfs/home/s445216/.conda/envs/nanopack_env/lib/python3.8/site-packages/pandas/core/arraylike.py", line 396, in array_ufunc
+    result = getattr(ufunc, method)(*inputs, **kwargs)
+TypeError: loop of ufunc does not support argument 0 of type int which has no callable log10 method

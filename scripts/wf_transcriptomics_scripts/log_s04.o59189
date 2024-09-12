@@ -1,0 +1,30 @@
+Creating resources folder
+
+Downloading transcriptome from GenCode
+2024-07-16 11:30:32 URL:https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.transcripts.fa.gz [83258208/83258208] -> "gencode.v46.transcripts.fa.gz" [1]
+
+Downloading genome annotation from GenCode
+2024-07-16 11:30:37 URL:https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_46/gencode.v46.basic.annotation.gtf.gz [30390388/30390388] -> "gencode.v46.basic.annotation.gtf.gz" [1]
+
+Unzipping folders
+
+Creating jaffal folder
+
+Downloading JAFFAL resources ...
+2024-07-16 11:32:24 URL:https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/25410494/JAFFA_REFERENCE_FILES_HG38_GENCODE22.V2.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIYCQYOYV5JSSROOA/20240716/eu-west-1/s3/aws4_request&X-Amz-Date=20240716T103059Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=713a44c8b288c9454dcda9a6f6ec5484ffa388b4cc2aad93b1c84fba0cbef36f [5180566100/5180566100] -> "25410494" [1]
+
+Preparing direct RNA fastq files
+
+The sample sheet should be added manually:
+SG-Nex_data/directRNA/test_data/samples.csv
+
+Preparing direct RNA fastq files
+
+The sample sheet should be added manually:
+SG-Nex_data/cDNA/test_data/samples.csv
+
+
+Done
+
+Tue Jul 16 11:41:58 BST 2024
+

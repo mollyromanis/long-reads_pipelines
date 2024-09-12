@@ -1,0 +1,1600 @@
+Running pipeline
+Nextflow 24.04.3 is available - Please consider updating your version to it
+N E X T F L O W  ~  version 23.10.0
+NOTE: Your local project version looks outdated - a different revision is available in the remote repository [f01006c302]
+Launching `https://github.com/epi2me-labs/wf-transcriptomes` [happy_sinoussi] DSL2 - revision: 999fb4e44a [master]
+
+||||||||||   _____ ____ ___ ____  __  __ _____      _       _
+||||||||||  | ____|  _ \_ _|___ \|  \/  | ____|    | | __ _| |__  ___
+|||||       |  _| | |_) | |  __) | |\/| |  _| _____| |/ _` | '_ \/ __|
+|||||       | |___|  __/| | / __/| |  | | |__|_____| | (_| | |_) \__ \
+||||||||||  |_____|_|  |___|_____|_|  |_|_____|    |_|\__,_|_.__/|___/
+||||||||||  wf-transcriptomes v1.1.1-g999fb4e
+--------------------------------------------------------------------------------
+Core Nextflow options
+  revision            : master
+  runName             : happy_sinoussi
+  containerEngine     : singularity
+  container           : [withLabel:isoforms:ontresearch/wf-transcriptomes:shae7c9f184996a384e99be68e790f0612f0c732867, withLabel:wf_common:ontresearch/wf-common:sha1c5febff9f75143710826498b093d9769a5edbb9]
+  launchDir           : /mnt/beegfs/home/s445216/thesis_project/ONP
+  workDir             : /mnt/beegfs/home/s445216/thesis_project/ONP/work
+  projectDir          : /mnt/beegfs/home/s445216/.nextflow/assets/epi2me-labs/wf-transcriptomes
+  userName            : s445216
+  profile             : singularity
+  configFiles         : /mnt/beegfs/home/s445216/.nextflow/assets/epi2me-labs/wf-transcriptomes/nextflow.config
+
+Input Options
+  fastq               : /mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/test_data/fastq_files
+  transcriptome_source: precomputed
+  ref_transcriptome   : /mnt/beegfs/home/s445216/thesis_project/ONP//gencode46/gencode.v46.transcripts.fa
+  ref_annotation      : /mnt/beegfs/home/s445216/thesis_project/ONP//gencode46/gencode.v46.basic.annotation.gtf
+  direct_rna          : true
+
+Output Options
+  out_dir             : /mnt/beegfs/home/s445216/thesis_project/ONP/results/wf_trancriptomics_results/directRNA/
+
+Sample Options
+  sample_sheet        : /mnt/beegfs/home/s445216/thesis_project/ONP/SG-Nex_data/directRNA/test_data/sample_sheet.csv
+
+Gene Fusion Detection Options
+  jaffal_refBase      : /mnt/beegfs/home/s445216/thesis_project/ONP/jaffal_hg38_genCode22/
+
+Differential Expression Options
+  de_analysis         : true
+
+Advanced Options
+  threads             : 16
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+--------------------------------------------------------------------------------
+If you use epi2me-labs/wf-transcriptomes for your analysis please cite:
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+
+--------------------------------------------------------------------------------
+This is epi2me-labs/wf-transcriptomes v1.1.1-g999fb4e.
+--------------------------------------------------------------------------------
+Reference Transcriptome provided will be used for differential expression.
+Searching input for [.fastq, .fastq.gz, .fq, .fq.gz] files.
+[-        ] process > validate_sample_sheet -
+
+[-        ] process > validate_sample_sheet          -
+[-        ] process > fastcat                        -
+[-        ] process > pipeline:preprocess_ref_ann... -
+[-        ] process > pipeline:collectFastqIngres... -
+[-        ] process > pipeline:getVersions           -
+[-        ] process > pipeline:getParams             -
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[-        ] process > pipeline:preprocess_ref_tra... -
+[-        ] process > pipeline:differential_expre... -
+
+[-        ] process > validate_sample_sheet          -
+[-        ] process > fastcat                        -
+[-        ] process > pipeline:preprocess_ref_ann... -
+[-        ] process > pipeline:collectFastqIngres... -
+[-        ] process > pipeline:getVersions           -
+[-        ] process > pipeline:getParams             -
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[-        ] process > pipeline:preprocess_ref_tra... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+[-        ] process > validate_sample_sheet          -
+[-        ] process > fastcat                        -
+[-        ] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[-        ] process > pipeline:getVersions           [  0%] 0 of 1
+[-        ] process > pipeline:getParams             -
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[-        ] process > pipeline:preprocess_ref_tra... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [  0%] 0 of 1
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [  0%] 0 of 1
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [  0%] 0 of 1
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [  0%] 0 of 1
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [  0%] 0 of 1
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [  0%] 0 of 1
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [  0%] 0 of 1
+[-        ] process > fastcat                        -
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (6)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[-        ] process > fastcat                        [  0%] 0 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (10)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[da/9c2ae6] process > fastcat (1)                    [  0%] 0 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (11)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[a2/1b7619] process > fastcat (2)                    [  0%] 0 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (11)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[a2/1b7619] process > fastcat (2)                    [  0%] 0 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [  0%] 0 of 1
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (11)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[a2/1b7619] process > fastcat (2)                    [  0%] 0 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (12)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [ 16%] 1 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... -
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   -
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (12)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [ 16%] 1 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[-        ] process > pipeline:collectFastqIngres... [  0%] 0 of 1
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 1
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (13)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [ 16%] 1 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[42/9bec4f] process > pipeline:collectFastqIngres... [  0%] 0 of 1
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 1
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (13)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [ 16%] 1 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[42/9bec4f] process > pipeline:collectFastqIngres... [  0%] 0 of 1
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 1
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (13)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[da/9c2ae6] process > fastcat (1)                    [ 33%] 2 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[42/9bec4f] process > pipeline:collectFastqIngres... [  0%] 0 of 2
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 2
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (14)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[da/9c2ae6] process > fastcat (1)                    [ 33%] 2 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[42/9bec4f] process > pipeline:collectFastqIngres... [ 50%] 1 of 2
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 2
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (14)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[da/9c2ae6] process > fastcat (1)                    [ 33%] 2 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[73/981dde] process > pipeline:collectFastqIngres... [100%] 2 of 2
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 2
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (14)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[09/045d4d] process > fastcat (3)                    [ 50%] 3 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[73/981dde] process > pipeline:collectFastqIngres... [ 66%] 2 of 3
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 3
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (15)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[09/045d4d] process > fastcat (3)                    [ 50%] 3 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[d5/4083d7] process > pipeline:collectFastqIngres... [ 66%] 2 of 3
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 3
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (15)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[09/045d4d] process > fastcat (3)                    [ 50%] 3 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[d5/4083d7] process > pipeline:collectFastqIngres... [ 66%] 2 of 3
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 3
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (15)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[09/045d4d] process > fastcat (3)                    [ 50%] 3 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[d5/4083d7] process > pipeline:collectFastqIngres... [100%] 3 of 3
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 3
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (15)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[79/8e6d77] process > fastcat (4)                    [ 66%] 4 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[d5/4083d7] process > pipeline:collectFastqIngres... [ 75%] 3 of 4
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 4
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (16)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[79/8e6d77] process > fastcat (4)                    [ 66%] 4 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[3a/824b5a] process > pipeline:collectFastqIngres... [ 75%] 3 of 4
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 4
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (16)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[79/8e6d77] process > fastcat (4)                    [ 66%] 4 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[3a/824b5a] process > pipeline:collectFastqIngres... [ 75%] 3 of 4
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 4
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (16)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[79/8e6d77] process > fastcat (4)                    [ 66%] 4 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[3a/824b5a] process > pipeline:collectFastqIngres... [100%] 4 of 4
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 4
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (16)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e8/2fec00] process > fastcat (6)                    [ 83%] 5 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[3a/824b5a] process > pipeline:collectFastqIngres... [ 80%] 4 of 5
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 5
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (17)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e8/2fec00] process > fastcat (6)                    [ 83%] 5 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 80%] 4 of 5
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 5
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (17)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e8/2fec00] process > fastcat (6)                    [ 83%] 5 of 6
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [100%] 5 of 5
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 5
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (18)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[-        ] process > pipeline:gene_fusions:jaffal   [  0%] 0 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (19)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[7c/c53221] process > pipeline:gene_fusions:jaffa... [  0%] 0 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (20)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[7c/c53221] process > pipeline:gene_fusions:jaffa... [ 16%] 1 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (21)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[2a/db4414] process > pipeline:gene_fusions:jaffa... [ 33%] 2 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (22)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[66/9a8adc] process > pipeline:gene_fusions:jaffa... [ 50%] 3 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (23)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[a0/08b82e] process > pipeline:gene_fusions:jaffa... [ 66%] 4 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (23)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[a0/08b82e] process > pipeline:gene_fusions:jaffa... [ 66%] 4 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (24)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[90/631801] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[b4/35bb18] process > pipeline:gene_fusions:jaffa... [ 83%] 5 of 6
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (25)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [ 83%] 5 of 6
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (26)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[bc/7e47d6] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (26)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[bc/7e47d6] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (27)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[54/61860d] process > pipeline:differential_expre... [ 16%] 1 of 6
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (28)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[fc/8ef52f] process > pipeline:differential_expre... [ 33%] 2 of 6
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 2
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (29)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[1f/8148de] process > pipeline:differential_expre... [ 50%] 3 of 6
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 3
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (30)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[cd/14b237] process > pipeline:differential_expre... [ 66%] 4 of 6
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 4
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (31)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [ 83%] 5 of 6
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 5
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (32)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[64/64df5b] process > pipeline:differential_expre... [  0%] 0 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (33)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[64/64df5b] process > pipeline:differential_expre... [ 16%] 1 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (33)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[64/64df5b] process > pipeline:differential_expre... [ 16%] 1 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (34)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[14/7af108] process > pipeline:differential_expre... [ 33%] 2 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (34)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[14/7af108] process > pipeline:differential_expre... [ 33%] 2 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (35)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[0c/6cbe56] process > pipeline:differential_expre... [ 50%] 3 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (35)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[0c/6cbe56] process > pipeline:differential_expre... [ 50%] 3 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (36)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[59/41e167] process > pipeline:differential_expre... [ 66%] 4 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (37)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[d6/8e406d] process > pipeline:differential_expre... [ 83%] 5 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (37)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[d6/8e406d] process > pipeline:differential_expre... [ 83%] 5 of 6
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (38)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[-        ] process > pipeline:differential_expre... [  0%] 0 of 1
+[11/c3e97e] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (39)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [  0%] 0 of 1
+[11/c3e97e] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (39)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [  0%] 0 of 1
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (40)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (40)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:differential_expre... -
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (41)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [  0%] 0 of 1
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (41)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[-        ] process > pipeline:makeReport            -
+[-        ] process > output                         -
+
+executor >  local (42)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [  0%] 0 of 1
+[-        ] process > output                         -
+
+executor >  local (57)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[4c/99f33a] process > output (28)                    [  0%] 0 of 31
+
+executor >  local (58)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[79/df7e68] process > output (25)                    [  0%] 0 of 31
+
+executor >  local (59)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[95/ce62c9] process > output (5)                     [  3%] 1 of 31
+
+executor >  local (63)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[a1/fdce7b] process > output (27)                    [ 16%] 5 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[4c/99f33a] process > output (28)                    [ 51%] 16 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[4c/99f33a] process > output (28)                    [ 51%] 16 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[f6/99722d] process > output (24)                    [ 54%] 17 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[a4/01207c] process > output (15)                    [ 61%] 19 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[ae/08be10] process > output (31)                    [ 74%] 23 of 31
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[c0/d29b6b] process > output (20)                    [100%] 31 of 31 ✔
+
+executor >  local (73)
+[45/363364] process > validate_sample_sheet          [100%] 1 of 1 ✔
+[e7/2956f4] process > fastcat (5)                    [100%] 6 of 6 ✔
+[bb/ac6f56] process > pipeline:preprocess_ref_ann... [100%] 1 of 1 ✔
+[44/08f790] process > pipeline:collectFastqIngres... [100%] 6 of 6 ✔
+[59/7093c6] process > pipeline:getVersions           [100%] 1 of 1 ✔
+[16/3c4b75] process > pipeline:getParams             [100%] 1 of 1 ✔
+[09/17c307] process > pipeline:gene_fusions:jaffa... [100%] 6 of 6 ✔
+[fa/643435] process > pipeline:preprocess_ref_tra... [100%] 1 of 1 ✔
+[55/e7f90b] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[f8/abd683] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[0e/803baf] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[b2/2c28bc] process > pipeline:differential_expre... [100%] 6 of 6 ✔
+[87/9ff3d2] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[11/c3e97e] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[5a/f594b9] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[ca/05f5cc] process > pipeline:differential_expre... [100%] 1 of 1 ✔
+[d6/0f0a64] process > pipeline:makeReport (1)        [100%] 1 of 1 ✔
+[c0/d29b6b] process > output (20)                    [100%] 31 of 31 ✔
+Completed at: 17-Jul-2024 17:52:49
+Duration    : 1h 19m 22s
+CPU hours   : 19.2
+Succeeded   : 73
+
+
+
+Done
+
+Wed Jul 17 17:52:50 BST 2024
+

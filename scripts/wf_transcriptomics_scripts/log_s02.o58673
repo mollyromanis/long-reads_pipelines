@@ -1,0 +1,45 @@
+Downloading demo data
+2024-07-14 22:23:06 URL:https://ont-exd-int-s3-euwst1-epi2me-labs.s3.amazonaws.com/wf-isoforms/differential_expression.tar.gz [1212506957/1212506957] -> "differential_expression.tar.gz" [1]
+differential_expression/
+differential_expression/Homo_sapiens.GRCh38.109.gtf.gz
+differential_expression/gencode.v22.annotation.chr20.gff
+differential_expression/ref_transcriptome.fasta
+differential_expression/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+differential_expression/hg38_chr20.fa
+differential_expression/chr20/
+differential_expression/chr20/Masked_hg38_chr20.fa
+differential_expression/chr20/hg38_chr20.fa
+differential_expression/chr20/._hg38_chr20_genCode22.tab
+differential_expression/chr20/hg38_chr20_genCode22.1.bt2
+differential_expression/chr20/hg38_chr20_genCode22.fa
+differential_expression/chr20/README.md
+differential_expression/chr20/Masked_hg38_chr20.1.bt2
+differential_expression/chr20/gencode.v22.annotation.chr20.gtf
+differential_expression/chr20/hg38_chr20_genCode22.tab
+differential_expression/chr20/._hg38_chr20_genCode22.bed
+differential_expression/chr20/hg38_chr20_genCode22.bed
+differential_expression/differential_expression_fastq/
+differential_expression/differential_expression_fastq/barcode01/
+differential_expression/differential_expression_fastq/barcode01/condition1_rep1.fastq.gz
+differential_expression/differential_expression_fastq/barcode03/
+differential_expression/differential_expression_fastq/barcode03/condition1_rep3.fastq.gz
+differential_expression/differential_expression_fastq/barcode06/
+differential_expression/differential_expression_fastq/barcode06/condition2_rep3.fastq.gz
+differential_expression/differential_expression_fastq/barcode02/
+differential_expression/differential_expression_fastq/barcode02/condition1_rep2.fastq.gz
+differential_expression/differential_expression_fastq/barcode04/
+differential_expression/differential_expression_fastq/barcode04/condition2_rep1.fastq.gz
+differential_expression/differential_expression_fastq/barcode05/
+differential_expression/differential_expression_fastq/barcode05/condition2_rep2.fastq.gz
+differential_expression/Homo_sapiens.GRCh38.cdna.all.fa.gz
+differential_expression/gencode.v22.annotation.chr20.gff3
+differential_expression/gencode.v22.annotation.chr20.gtf
+differential_expression/sample_sheet.csv
+
+Removing unwanted files
+
+
+Done
+
+Sun Jul 14 22:23:19 BST 2024
+

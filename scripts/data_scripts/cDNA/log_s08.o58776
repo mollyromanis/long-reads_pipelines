@@ -1,0 +1,150 @@
+NanoStat 1.6.0
+
+Stats for H9_2_4
+General summary:         
+Mean read length:                 1,204.2
+Mean read quality:                   11.7
+Median read length:                 947.0
+Median read quality:                 12.3
+Number of reads:              1,585,284.0
+Read length N50:                  1,364.0
+STDEV read length:                  757.2
+Total bases:              1,909,030,620.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:	1585284 (100.0%) 1909.0Mb
+>Q15:	58031 (3.7%) 98.8Mb
+>Q20:	0 (0.0%) 0.0Mb
+>Q25:	0 (0.0%) 0.0Mb
+>Q30:	0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:	19.8 (752)
+2:	19.1 (558)
+3:	19.0 (765)
+4:	18.9 (2055)
+5:	18.7 (710)
+Top 5 longest reads and their mean basecall quality score
+1:	12885 (13.0)
+2:	12561 (13.3)
+3:	12410 (15.4)
+4:	11911 (14.4)
+5:	11184 (14.4)
+
+Stats for H9_3_4
+General summary:         
+Mean read length:                 1,193.0
+Mean read quality:                   11.7
+Median read length:                 938.0
+Median read quality:                 12.3
+Number of reads:              1,671,014.0
+Read length N50:                  1,337.0
+STDEV read length:                  744.1
+Total bases:              1,993,457,234.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:	1671014 (100.0%) 1993.5Mb
+>Q15:	56814 (3.4%) 97.9Mb
+>Q20:	0 (0.0%) 0.0Mb
+>Q25:	0 (0.0%) 0.0Mb
+>Q30:	0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:	19.7 (599)
+2:	19.1 (850)
+3:	18.8 (3756)
+4:	18.8 (561)
+5:	18.8 (504)
+Top 5 longest reads and their mean basecall quality score
+1:	12692 (14.1)
+2:	12337 (13.0)
+3:	11524 (13.2)
+4:	11291 (13.6)
+5:	11195 (13.0)
+
+Stats for H9_4_4
+General summary:         
+Mean read length:                 1,207.6
+Mean read quality:                   11.7
+Median read length:                 950.0
+Median read quality:                 12.3
+Number of reads:              1,498,136.0
+Read length N50:                  1,370.0
+STDEV read length:                  758.0
+Total bases:              1,809,079,717.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:	1498136 (100.0%) 1809.1Mb
+>Q15:	52416 (3.5%) 90.5Mb
+>Q20:	0 (0.0%) 0.0Mb
+>Q25:	0 (0.0%) 0.0Mb
+>Q30:	0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:	19.6 (633)
+2:	19.1 (695)
+3:	19.1 (5211)
+4:	19.1 (1315)
+5:	19.0 (518)
+Top 5 longest reads and their mean basecall quality score
+1:	14412 (12.6)
+2:	12264 (12.2)
+3:	12235 (11.6)
+4:	12183 (12.4)
+5:	11761 (15.0)
+
+Stats for HEYA8_1_4
+General summary:         
+Mean read length:                 1,134.2
+Mean read quality:                   11.7
+Median read length:                 899.0
+Median read quality:                 12.3
+Number of reads:              1,755,040.0
+Read length N50:                  1,246.0
+STDEV read length:                  684.4
+Total bases:              1,990,492,983.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:	1755040 (100.0%) 1990.5Mb
+>Q15:	55952 (3.2%) 91.2Mb
+>Q20:	3 (0.0%) 0.0Mb
+>Q25:	0 (0.0%) 0.0Mb
+>Q30:	0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:	21.4 (513)
+2:	20.5 (975)
+3:	20.2 (544)
+4:	19.1 (2038)
+5:	19.1 (631)
+Top 5 longest reads and their mean basecall quality score
+1:	13448 (11.9)
+2:	11633 (10.4)
+3:	11275 (14.8)
+4:	11145 (10.3)
+5:	10940 (14.6)
+
+Stats for HEYA8_2_4
+General summary:         
+Mean read length:                 1,120.8
+Mean read quality:                   11.7
+Median read length:                 888.0
+Median read quality:                 12.3
+Number of reads:              1,725,141.0
+Read length N50:                  1,219.0
+STDEV read length:                  676.5
+Total bases:              1,933,576,845.0
+Number, percentage and megabases of reads above quality cutoffs
+>Q10:	1725141 (100.0%) 1933.6Mb
+>Q15:	58025 (3.4%) 91.9Mb
+>Q20:	1 (0.0%) 0.0Mb
+>Q25:	0 (0.0%) 0.0Mb
+>Q30:	0 (0.0%) 0.0Mb
+Top 5 highest mean basecall quality scores and their read lengths
+1:	20.2 (575)
+2:	19.8 (1350)
+3:	19.6 (782)
+4:	19.2 (611)
+5:	18.9 (1610)
+Top 5 longest reads and their mean basecall quality score
+1:	14254 (12.1)
+2:	12702 (11.6)
+3:	12076 (12.8)
+4:	11870 (12.2)
+5:	11590 (12.1)
+
+Stats for HEYA8_3_3
+ERROR:root:Nanoget: File provided doesn't exist or the path is incorrect: SGNex_HEYA8_cDNA_replicate3_run3_filt.fastq.gz
+File provided doesn't exist or the path is incorrect: SGNex_HEYA8_cDNA_replicate3_run3_filt.fastq.gz

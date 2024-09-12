@@ -1,0 +1,43 @@
+chopper 0.8.0
+
+Filtering H9_2_1
+Kept 436799 reads out of 660799 reads
+
+Filtering H9_3_1
+Kept 400022 reads out of 656225 reads
+
+Filtering H9_4_1
+Kept 596962 reads out of 929959 reads
+
+Filtering HEYA8_1_1
+Kept 721591 reads out of 1097491 reads
+
+Filtering HEYA8_2_1
+Kept 633047 reads out of 1007926 reads
+
+Filtering HEYA8_3_1
+Kept 816041 reads out of 1362327 reads
+
+total 14409021
+drwxr-xr-x 2 s445216 domain users         12 Jul 12 19:03 .
+drwxr-xr-x 4 s445216 domain users          2 Jul 12 18:45 ..
+-rw-r--r-- 1 s445216 domain users 1033379921 Jul 28  2023 SGNex_H9_directRNA_replicate2_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users  703421208 Jul 14 19:22 SGNex_H9_directRNA_replicate2_run1_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1004320972 Jul 28  2023 SGNex_H9_directRNA_replicate3_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users  643900725 Jul 14 19:25 SGNex_H9_directRNA_replicate3_run1_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1457620390 Jul 28  2023 SGNex_H9_directRNA_replicate4_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users  969346879 Jul 14 19:29 SGNex_H9_directRNA_replicate4_run1_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1730757368 Jul 28  2023 SGNex_HEYA8_directRNA_replicate1_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1177648251 Jul 14 19:34 SGNex_HEYA8_directRNA_replicate1_run1_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1570888196 Jul 28  2023 SGNex_HEYA8_directRNA_replicate2_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1031767923 Jul 14 19:38 SGNex_HEYA8_directRNA_replicate2_run1_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2103601998 Jul 28  2023 SGNex_HEYA8_directRNA_replicate3_run1.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1328178971 Jul 14 19:43 SGNex_HEYA8_directRNA_replicate3_run1_filt.fastq.gz
+
+Moving filtered data
+
+
+Done
+
+Sun Jul 14 19:44:59 BST 2024
+

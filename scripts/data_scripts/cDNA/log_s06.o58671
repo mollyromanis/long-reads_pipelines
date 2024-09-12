@@ -1,0 +1,44 @@
+chopper 0.8.0
+
+Filtering H9_2_4
+Kept 1585284 reads out of 2600272 reads
+
+Filtering H9_3_4
+Kept 1671014 reads out of 2667654 reads
+
+Filtering H9_4_4
+Kept 1498136 reads out of 2378634 reads
+
+Filtering HEYA8_1_4
+Kept 1755040 reads out of 2755565 reads
+
+Filtering HEYA8_2_4
+Kept 1725141 reads out of 2716927 reads
+
+Filtering HEYA8_3_3
+gzip: SGNex_HEYA8_cDNA_replicate3_run4_down.fastq.gz: No such file or directory
+Kept 0 reads out of 0 reads
+
+total 26604309
+drwxr-xr-x 2 s445216 domain users         11 Jul 14 23:04 .
+drwxr-xr-x 5 s445216 domain users          3 Jul 12 18:51 ..
+-rw-r--r-- 1 s445216 domain users 2853410035 Jul 12 15:43 SGNex_H9_cDNA_replicate2_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2044653327 Jul 14 22:29 SGNex_H9_cDNA_replicate2_run4_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2946961133 Jul 12 15:54 SGNex_H9_cDNA_replicate3_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2138504309 Jul 14 22:38 SGNex_H9_cDNA_replicate3_run4_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2652742386 Jul 12 16:04 SGNex_H9_cDNA_replicate4_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 1938269704 Jul 14 22:46 SGNex_H9_cDNA_replicate4_run4_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2967431556 Jul 12 16:16 SGNex_HEYA8_cDNA_replicate1_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2135226965 Jul 14 22:54 SGNex_HEYA8_cDNA_replicate1_run4_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2867382876 Jul 12 16:27 SGNex_HEYA8_cDNA_replicate2_run4_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2070066935 Jul 14 23:03 SGNex_HEYA8_cDNA_replicate2_run4_filt.fastq.gz
+-rw-r--r-- 1 s445216 domain users 2628158111 Jul 12 16:37 SGNex_HEYA8_cDNA_replicate3_run3_down.fastq.gz
+-rw-r--r-- 1 s445216 domain users         20 Jul 14 23:03 SGNex_HEYA8_cDNA_replicate3_run4_filt.fastq.gz
+
+Moving filtered data
+
+
+Done
+
+Sun Jul 14 23:04:30 BST 2024
+
